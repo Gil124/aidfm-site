@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Gil124github.io/aidfm-site",
+  "homepage": "https://gil124github.io/aidfm-site",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
