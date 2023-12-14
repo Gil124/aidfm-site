@@ -2,7 +2,7 @@ import React from "react";
 import Mission from "./Mission/Mission";
 import History from "./History/History";
 import Values from "./Values/Values";
-import Objectives from "./Objectives/objectives";
+import Objectives from "./Objectives/Objectives";
 import InstInfo from "./InstInfo/InstInfo";
 
 function WhoWeAre() {
