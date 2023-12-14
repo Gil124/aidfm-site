@@ -1,0 +1,16 @@
+.container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #221b68;
+  height: 50vh;
+  width: 100%;
+  padding: .75rem;
+  color: #f8f8fd;
+  border-radius: .25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  z-index: -10;
+  padding-top: 52px;
+  transition: opacity .15s ease-in-out, color 0.45s;
+}

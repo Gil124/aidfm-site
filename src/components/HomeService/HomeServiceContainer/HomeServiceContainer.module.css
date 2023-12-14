@@ -1,0 +1,136 @@
+.container {
+  flex: 1 1 calc((100% - 19.2vw) / 3);
+  aspect-ratio: 16/10;
+  min-width: 140px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1vw;
+  color: #f8f8fd;
+  box-shadow: 0px 0px 20px 3px rgba(20, 12, 104, 0.08);
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.container img {
+  background-size: cover;
+  width: 105%;
+  height: 105%;
+  transition: all 0.4s;
+}
+
+.container h3 {
+  position: absolute;
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+  color: #f8f8fd;
+  text-align: left;
+  font-size: 2.2vw;
+  width: 60%;
+  top: 10%;
+  left: 10%;
+  transition: all 0.4s;
+  pointer-events: none;
+}
+
+.button {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  font-size: 1.5vw;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #24232900;
+  border-radius: 40px;
+  background-color: #f9f9f900;
+  width: 8vw;
+  height: 2.8vw;
+  scale: 70%;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.button a {
+  font-size: 1.5vw;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #24232900;
+  scale: 70%;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.arrow {
+  background-color: transparent;
+  margin-left: -1vw;
+  color: #0000;
+  transition: all 0.4s;
+}
+
+.container:hover .button {
+  background-color: #f8f8fd;
+  color: #211b68;
+  scale: 100%;
+  transition: all 0.3s;
+}
+
+.container:hover .button a {
+  color: #211b68;
+  scale: 100%;
+  transition: all 0.3s;
+}
+
+.container:hover .button:hover {
+  width: 10vw;
+  transition: all 0.3s;
+}
+
+.container:hover .button:hover .arrow {
+  margin-left: 0.8vw;
+  color: #211b68;
+}
+
+.container:hover img {
+  scale: 125%;
+  cursor: pointer;
+}
+
+.container:hover h3 {
+  color: #f9f9f900;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    height: 25vw;
+    flex: 1 1 calc((72vw) / 2);
+    width: calc((72vw) / 2);
+    min-width: 0;
+  }
+
+  .container h3 {
+    font-size: 4vw;
+    width: 90%;
+  }
+
+  .button {
+    background-color: #f8f8fd;
+    color: #211b68;
+    scale: 100%;
+    font-size: 3vw;
+    height: auto;
+    width: auto;
+    margin: 60px 20px 0 80px;
+    padding: 2px 10px;
+  }
+
+  .arrow {
+    margin-left: 0.8vw;
+    color: #211b68;
+  }
+}

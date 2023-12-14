@@ -1,0 +1,16 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  height: auto;
+  width: 100%;
+  margin-top: 5vh;
+  margin-bottom: 15vh;
+  background-color: #f8f8fd;
+}
+
+@media only screen and (max-width: 1000px) {
+  .page {
+   gap: 5vh;
+  }
+}

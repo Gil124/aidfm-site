@@ -1,0 +1,30 @@
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+}
+
+.button {
+  width: 533px;
+  height: 70px;
+  border-radius: 50px;
+  background-color: #221b68;
+  color: #f8f8fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Monteserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 200;
+  letter-spacing: 0.72px;
+  cursor: pointer;
+}
+
+.symbol {
+  width: 18px;
+  height: 18px;
+  color: #f8f8fd;
+  align-content: center;
+}

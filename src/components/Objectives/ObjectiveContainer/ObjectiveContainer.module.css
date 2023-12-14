@@ -1,0 +1,33 @@
+.container {
+  flex: 1 1 calc((100% - 70px) / 2);
+  max-width: calc((100% - 70px) / 2);
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.img {
+  height: 380px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  color: #2b1fa9;
+  width: 80%;
+  letter-spacing: 1px;
+}
+
+.text {
+  font-size: 24px;
+  font-weight: 400;
+  color: #242424;
+  width: 80%;
+  letter-spacing: 1px;
+}

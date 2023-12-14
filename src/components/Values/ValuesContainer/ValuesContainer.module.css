@@ -1,0 +1,32 @@
+.container {
+  flex: 1 1 calc((100% - 140px) / 3);
+  max-width: calc((100% - 140px) / 3);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #6960c1;
+  box-shadow: 0px 0px 20px 3px rgba(20, 12, 104, 0.08);
+}
+
+.container:last-child {
+  margin-left: calc((100% - ((100% - 140px) / 3)) / 2);
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  color: #2b1fa9;
+}
+
+.title {
+  width: 90%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}

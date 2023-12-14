@@ -1,0 +1,46 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-right: 20%;
+  margin-left: 20px;
+  gap: 50px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.divider {
+  width: 60vw;
+  border: 1px solid #2b1fa9;
+  margin-top: 20px;
+}
+
+.title {
+  color: #2b1fa9;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+
+.headerText {
+  color: #242329;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  font-weight: 500;
+  margin-top: 10px;
+  width: 80%;
+}
+
+.team {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 70px;
+  margin-bottom: 70px;
+}
