@@ -24,7 +24,6 @@ function App() {
           <Route path="about/*" element={<AboutUs />} />
           <Route path="services" element={<Services />} />
           <Route path="join" element={<JoinUs />} />
-          <Route path="projects" element={<Projects />} />
         </Route>
       </Routes>
       <Footer />
