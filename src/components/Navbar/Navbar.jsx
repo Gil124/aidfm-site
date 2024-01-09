@@ -24,12 +24,6 @@ const services = [
   { title: "Apoio à Investigação", ref: "/services#research" },
 ];
 
-const projects = [
-  { title: "Os Nossos Números", ref: "" },
-  { title: "Projetos Passados", ref: "" },
-  { title: "Projetos em Andamento", ref: "" },
-];
-
 const join = [{ title: "", ref: "" }];
 
 const heights = ["200px", "269px", "150px", "100px"];
@@ -94,18 +88,9 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to="/projects"
-                style={{ textDecoration: "none" }}
-                onMouseEnter={() => handleLinks(2)}
-              >
-                <p>Projetos</p>
-              </Link>
-            </li>
-            <li>
-              <Link
                 to="/join"
                 style={{ textDecoration: "none" }}
-                onMouseEnter={() => handleLinks(3)}
+                onMouseEnter={() => handleLinks(2)}
               >
                 <p>Junte-se a Nós</p>
               </Link>
@@ -125,7 +110,6 @@ const Navbar = () => {
                 : {}
             }
           >
-            
             {links === 0
               ? about.map((link) => (
                   <a key={nanoid()} href={link.ref} className={styles.menuLink}>
@@ -141,13 +125,6 @@ const Navbar = () => {
                 ))
               : null}
             {links === 2
-              ? projects.map((link) => (
-                  <a key={nanoid()} href={link.ref} className={styles.menuLink}>
-                    {link.title}
-                  </a>
-                ))
-              : null}
-            {links === 3
               ? join.map((link) => (
                   <a key={nanoid()} href={link.ref} className={styles.menuLink}>
                     {link.title}
