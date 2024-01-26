@@ -17,14 +17,18 @@ function Header() {
       }}
     >
       <Fade direction="left">
-        <div className={styles.title_container}>
-          <h1 className={styles.header__title}>Investigação</h1>
-          <img
-            className={styles.header__decor}
-            src={homeSymbol}
-            alt="Medicine Logo"
-          ></img>
-          <h1 className={styles.header__title}>Desenvolvimento</h1>
+        <div>
+          <div className={styles.title_box}>
+            <h1 className={styles.header__title}>Investigação</h1>
+            <img
+              className={styles.header__decor}
+              src={homeSymbol}
+              alt="Medicine Logo"
+            ></img>
+          </div>
+          <div className={styles.title_box}>
+            <h1 className={styles.header__title}>Desenvolvimento</h1>
+          </div>
         </div>
       </Fade>
       <Fade direction="left">

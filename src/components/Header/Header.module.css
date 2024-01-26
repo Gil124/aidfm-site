@@ -3,6 +3,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
+  padding-bottom: 100px;
   z-index: -1;
   display: flex;
   flex-direction: column;
@@ -13,7 +14,7 @@
   background-position: center !important;
 }
 
-.title_container {
+.title_box {
   display: flex;
   width: fit-content;
   flex-wrap: wrap;
@@ -21,26 +22,94 @@
   justify-content: center;
 }
 
+.title_box:last-child {
+  padding-left: 1rem;
+}
+
 .header__title {
   color: #efefef;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-style: normal;
+  font-size: 1.7rem;
   line-height: normal;
   text-transform: uppercase;
   position: relative;
   background-color: transparent;
 }
 
-.header__title span {
-  font-family: "Montserrat", sans-serif;
+.header__decor {
+  height: 1.75rem;
   position: relative;
-  margin-left: 5%;
   background-color: transparent;
 }
 
-.header__decor {
-  height: 2rem;
-  position: relative;
-  background-color: transparent;
-}
+@media (min-width: 560px) {
+  .header__title {
+    font-size: 2.5rem;
+  }
+  .header__decor {
+    height: 2.25rem;
+  }
+ }
+
+ @media (min-width: 760px) {
+  .title_box:last-child {
+    padding-left: 2rem;
+  }
+  .header__title {
+    font-size: 3.5rem;
+  }
+  .header__decor {
+    height: 3.25rem;
+  }
+ }
+
+ @media (min-width: 1020px) {
+  .header {
+    align-items: start;
+    padding-left: 7.5rem;
+  }
+  .title_box:last-child {
+    padding-left: 4.25rem;
+  }
+  .header__title {
+    font-size: 4rem;
+  }
+  .header__decor {
+    height: 3.75rem;
+  }
+ }
+
+ @media (min-width: 1280px) {
+  .header {
+    align-items: start;
+    padding-left: 10rem;
+    padding-bottom: 0px;
+  }
+  .title_box:last-child {
+    padding-left: 4.75rem;
+  }
+  .header__title {
+    font-size: 4.5rem;
+  }
+  .header__decor {
+    height: 4.25rem;
+  }
+ }
+
+ @media (min-width: 1500px) {
+  .header {
+    align-items: start;
+    padding-left: 12.5rem;
+  }
+  .title_box:last-child {
+    padding-left: 5.5rem;
+  }
+  .header__title {
+    font-size: 5rem;
+  }
+  .header__decor {
+    height: 4.75rem;
+  }
+ }
