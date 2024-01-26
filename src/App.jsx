@@ -2,7 +2,6 @@ import HomePage from "./pages/HomePage";
 import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
 import JoinUs from "./pages/JoinUs";
-import Projects from "./pages/Projects";
 import React, { useEffect } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";

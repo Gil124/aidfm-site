@@ -49,19 +49,17 @@ const HomeServices = () => {
       <Fade direction="down" triggerOnce>
         <h1 className="title">Os Nossos Serviços</h1>
       </Fade>
-        <div className={styles.services__container}>
-      <Fade cascade direction="up" triggerOnce className={styles.container} damping={0.1}>
-          {services.map((service) => (
-            <HomeServiceContainer
-              key={nanoid()}
-              id={service.id}
-              title={service.title}
-              image={service.img}
-              className={styles.container}
-            />
-          ))}
-      </Fade>
-        </div>
+      <div className={styles.services__container}>
+        {services.map((service) => (
+          <HomeServiceContainer
+            key={nanoid()}
+            id={service.id}
+            title={service.title}
+            image={service.img}
+            className={styles.container}
+          />
+        ))}
+      </div>
     </div>
   );
 };

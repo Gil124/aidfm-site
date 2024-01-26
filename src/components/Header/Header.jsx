@@ -16,24 +16,24 @@ function Header() {
     url(${headerBackground}), lightgray 50% / cover no-repeat`,
       }}
     >
-      <Fade className={styles.header__title} direction="left">
-      <h1 className={styles.header__title}>
-        Investigação
-        <img
-          className={styles.header__decor}
-          src={homeSymbol}
-          alt="Medicine Logo"
-        ></img>
-        <br></br>
-        <span>Desenvolvimento</span>
-      </h1>
+      <Fade direction="left">
+        <div className={styles.title_container}>
+          <h1 className={styles.header__title}>Investigação</h1>
+          <img
+            className={styles.header__decor}
+            src={homeSymbol}
+            alt="Medicine Logo"
+          ></img>
+          <h1 className={styles.header__title}>Desenvolvimento</h1>
+        </div>
       </Fade>
       <Fade direction="left">
-      <Button
-        text={"Descobre Mais"}
-        type="btn--home"
-        onClick={handleDiscoverButton}
-      /></Fade>
+        <Button
+          text={"Descobre Mais"}
+          type="btn--home"
+          onClick={handleDiscoverButton}
+        />
+      </Fade>
     </div>
   );
 }

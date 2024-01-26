@@ -13,13 +13,18 @@
   background-position: center !important;
 }
 
+.title_container {
+  display: flex;
+  width: fit-content;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
 .header__title {
-  width: 80%;
   color: #efefef;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  text-align: left;
-  font-size: 5.4vw;
   font-style: normal;
   line-height: normal;
   text-transform: uppercase;
@@ -35,20 +40,7 @@
 }
 
 .header__decor {
-  height: 6vw;
+  height: 2rem;
   position: relative;
   background-color: transparent;
-}
-
-@media only screen and (max-width: 1000px) {
-  .header__title {
-    font-size: 7vw;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  .header__decor {
-    height: 8vw;
-  }
 }

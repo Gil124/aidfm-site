@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   border: none;
+  box-shadow: none;
   /*border: red dashed 1px;*/
 }
 
