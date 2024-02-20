@@ -7,6 +7,7 @@ import { nanoid } from "nanoid";
 import fullLogoImg from "../../assets/logo-nav.svg";
 import mobileLogoImg from "../../assets/logo-nav-mobile.svg";
 import { Fade } from "react-awesome-reveal";
+import { IoClose } from "react-icons/io5";
 
 const about = [
   { title: "Quem Somos", ref: "/about" },
@@ -29,6 +30,7 @@ const join = [{ title: "", ref: "" }];
 const heights = ["200px", "269px", "150px", "100px"];
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   const [menu, setMenu] = useState(false);
   const [links, setLinks] = useState(0);
   const [hovered, setHovered] = useState(false);
@@ -46,104 +48,146 @@ const Navbar = () => {
     setHovered(false);
   };
 
+  const handleMenuClick = () => {
+    setMenuOpen(!menuOpen);
+    if (menuOpen) {
+      document.getElementsByTagName("body")[0].style =
+        "height: 100%; overflow: hidden;";
+    } else {
+      document.getElementsByTagName("body")[0].style =
+        "height: unset; overflow: unset;";
+    }
+    console.log("pressed");
+  };
+
   const toggleLang = () => {};
 
   return (
-    <Headroom style={{ zIndex: "3" }} disable={window.innerWidth < 1000}>
-      <div className={styles.navbar}>
-        <div className={styles.container}>
-          <div className={styles.left_logo}>
-            <Link
-              to="/"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-evenly",
-              }}
-            >
-              <img
-                src={window.innerWidth >= 1000 ? fullLogoImg : mobileLogoImg}
-                alt="Logo"
-              />
-            </Link>
-          </div>
-          <ul className={styles.right}>
-            <li>
+    <>
+      <Headroom style={{ zIndex: "3" }} disable={window.innerWidth < 1000}>
+        <div className={styles.navbar}>
+          <div className={styles.container}>
+            <div className={styles.left_logo}>
               <Link
-                to="/about"
-                style={{ textDecoration: "none" }}
-                onMouseEnter={() => handleLinks(0)}
+                to="/"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
               >
-                <p>Sobre Nós</p>
+                <img
+                  src={window.innerWidth >= 1000 ? fullLogoImg : mobileLogoImg}
+                  alt="Logo"
+                />
               </Link>
-            </li>
-            <li>
-              <Link
-                to="/services"
-                style={{ textDecoration: "none" }}
-                onMouseEnter={() => handleLinks(1)}
-              >
-                <p>Serviços</p>
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/join"
-                style={{ textDecoration: "none" }}
-                onMouseEnter={() => handleLinks(2)}
-              >
-                <p>Junte-se a Nós</p>
-              </Link>
-            </li>
-          </ul>
-          <div
-            className={styles.menu}
-            onMouseLeave={handleMouseExit}
-            style={
-              menu
-                ? {
-                    opacity: "1",
-                    pointerEvents: "auto",
-                    transform: "translateY(0)",
-                    height: heights[links],
-                  }
-                : {}
-            }
-          >
-            {links === 0
-              ? about.map((link) => (
-                  <a key={nanoid()} href={link.ref} className={styles.menuLink}>
-                    {link.title}
-                  </a>
-                ))
-              : null}
-            {links === 1
-              ? services.map((link) => (
-                  <a key={nanoid()} href={link.ref} className={styles.menuLink}>
-                    {link.title}
-                  </a>
-                ))
-              : null}
-            {links === 2
-              ? join.map((link) => (
-                  <a key={nanoid()} href={link.ref} className={styles.menuLink}>
-                    {link.title}
-                  </a>
-                ))
-              : null}
-          </div>
-
-          <div className={styles.right_lang}>
-            <div className={styles.toggle}>
-              <Button text="MENU" type="btn--menu" />
             </div>
-            <Button text="" type="btn--lang" onClick={toggleLang} />
-            <h1>PT</h1>
+            <ul className={styles.right}>
+              <li>
+                <Link
+                  to="/about"
+                  style={{ textDecoration: "none" }}
+                  onMouseEnter={() => handleLinks(0)}
+                >
+                  <p>Sobre Nós</p>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services"
+                  style={{ textDecoration: "none" }}
+                  onMouseEnter={() => handleLinks(1)}
+                >
+                  <p>Serviços</p>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/join"
+                  style={{ textDecoration: "none" }}
+                  onMouseEnter={() => handleLinks(2)}
+                >
+                  <p>Junte-se a Nós</p>
+                </Link>
+              </li>
+            </ul>
+            <div
+              className={styles.menu}
+              onMouseLeave={handleMouseExit}
+              style={
+                menu
+                  ? {
+                      opacity: "1",
+                      pointerEvents: "auto",
+                      transform: "translateY(0)",
+                      height: heights[links],
+                    }
+                  : {}
+              }
+            >
+              {links === 0
+                ? about.map((link) => (
+                    <a
+                      key={nanoid()}
+                      href={link.ref}
+                      className={styles.menuLink}
+                    >
+                      {link.title}
+                    </a>
+                  ))
+                : null}
+              {links === 1
+                ? services.map((link) => (
+                    <a
+                      key={nanoid()}
+                      href={link.ref}
+                      className={styles.menuLink}
+                    >
+                      {link.title}
+                    </a>
+                  ))
+                : null}
+              {links === 2
+                ? join.map((link) => (
+                    <a
+                      key={nanoid()}
+                      href={link.ref}
+                      className={styles.menuLink}
+                    >
+                      {link.title}
+                    </a>
+                  ))
+                : null}
+            </div>
+
+            <div className={styles.right_lang}>
+              <div className={styles.toggle}>
+                <Button
+                  text="MENU"
+                  type="btn--menu"
+                  onClick={handleMenuClick}
+                />
+              </div>
+              <Button text="" type="btn--lang" onClick={toggleLang} />
+              <h1>PT</h1>
+            </div>
           </div>
         </div>
+        <div className={styles.mobileMenu}></div>
+      </Headroom>
+      <div
+        className={styles.overlay}
+        style={menuOpen ? { transform: "translateY(0)" } : {}}
+      >
+        <div className={styles.menu_exitButton_container}>
+          <IoClose
+            className={styles.menu_exitButton}
+            onClick={handleMenuClick}
+          />
+        </div>
+        <div className={styles.menu_link_list}></div>
       </div>
-      <div className={styles.mobileMenu}></div>
-    </Headroom>
+    </>
   );
 };
 

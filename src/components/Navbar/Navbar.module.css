@@ -101,12 +101,17 @@
   transform: translateX(20px);
 }
 
-@media only screen and (max-width: 1000px) {
+.overlay {
+  display: none;
+}
 
+@media only screen and (max-width: 1000px) {
   .left_logo {
     width: auto;
     align-items: center;
     justify-content: center;
+    margin-left: 0;
+    width: 60px;
   }
 
   .right li p {
@@ -115,13 +120,14 @@
 
   .toggle {
     display: flex;
-    margin-right: 20px;
   }
 
   .right_lang {
     width: auto;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-right: 0;
+    width: 140px;
   }
 
   .right_lang h1 {
@@ -130,5 +136,35 @@
 
   .mobileMenu {
     display: flex;
+  }
+
+  .overlay {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #f8f8fd;
+    z-index: 100;
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in;
+  }
+
+  .menu_exitButton_container {
+    position: relative;
+    width: 100%;
+    top: 0;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .menu_exitButton {
+    width: 30px;
+    height: 30px;
+    color: #221b68;
+    margin-right: 10px;
   }
 }
