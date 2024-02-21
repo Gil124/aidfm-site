@@ -9,6 +9,29 @@ import mobileLogoImg from "../../assets/logo-nav-mobile.svg";
 import { Fade } from "react-awesome-reveal";
 import { IoClose } from "react-icons/io5";
 
+const links = [
+  {
+    title: "Sobre nós",
+    sublinks: [
+      { title: "Quem Somos", ref: "/about" },
+      { title: "Orgãos Sociais", ref: "/about/team" },
+      { title: "Centros de Investigação", ref: "/about/ci" },
+      { title: "Informação Institucional", ref: "/about/docs" },
+    ],
+  },
+  {
+    title: "Serviços",
+    sublinks: [
+      { title: "Organização de Eventos", ref: "/services#events" },
+      { title: "Gestão Administrativa", ref: "/services#admin" },
+      { title: "Minimização de Custos", ref: "/services#costs" },
+      { title: "Aquisição de Serviços", ref: "/services#services" },
+      { title: "Relatórios de Projeto", ref: "/services#projects" },
+      { title: "Apoio à Investigação", ref: "/services#research" },
+    ],
+  },
+];
+
 const about = [
   { title: "Quem Somos", ref: "/about" },
   { title: "Orgãos Sociais", ref: "/about/team" },
@@ -17,11 +40,11 @@ const about = [
 ];
 
 const services = [
-  { title: "Organização de Eventos", ref: "/services#events" },
+  { title: "Organização de Eventos", ref: "./services#events" },
   { title: "Gestão Administrativa", ref: "/services#admin" },
   { title: "Minimização de Custos", ref: "/services#costs" },
   { title: "Aquisição de Serviços", ref: "/services#services" },
-  { title: "Relatórios de Projeto", ref: "/services#projects" },
+  { title: "Relatórios de Projeto", ref: "./services#project" },
   { title: "Apoio à Investigação", ref: "/services#research" },
 ];
 
@@ -70,7 +93,7 @@ const Navbar = () => {
         <div className={styles.navbar}>
           <div className={styles.container}>
             <div className={styles.left_logo}>
-              <Link
+              <Link reloadDocument
                 to="/"
                 style={{
                   display: "flex",
@@ -86,7 +109,7 @@ const Navbar = () => {
             </div>
             <ul className={styles.right}>
               <li>
-                <Link
+                <Link reloadDocument
                   to="/about"
                   style={{ textDecoration: "none" }}
                   onMouseEnter={() => handleLinks(0)}
@@ -95,7 +118,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link
+                <Link reloadDocument
                   to="/services"
                   style={{ textDecoration: "none" }}
                   onMouseEnter={() => handleLinks(1)}
@@ -104,7 +127,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link
+                <Link reloadDocument
                   to="/join"
                   style={{ textDecoration: "none" }}
                   onMouseEnter={() => handleLinks(2)}
@@ -129,35 +152,35 @@ const Navbar = () => {
             >
               {links === 0
                 ? about.map((link) => (
-                    <a
+                    <Link reloadDocument
                       key={nanoid()}
-                      href={link.ref}
+                      to={link.ref}
                       className={styles.menuLink}
                     >
                       {link.title}
-                    </a>
+                    </Link>
                   ))
                 : null}
               {links === 1
                 ? services.map((link) => (
-                    <a
+                    <Link reloadDocument
                       key={nanoid()}
                       href={link.ref}
                       className={styles.menuLink}
                     >
                       {link.title}
-                    </a>
+                    </Link>
                   ))
                 : null}
               {links === 2
                 ? join.map((link) => (
-                    <a
+                    <Link reloadDocument
                       key={nanoid()}
                       href={link.ref}
                       className={styles.menuLink}
                     >
                       {link.title}
-                    </a>
+                    </Link>
                   ))
                 : null}
             </div>

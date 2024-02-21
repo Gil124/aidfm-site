@@ -65,6 +65,7 @@ function Services() {
             title={service.title}
             text={service.text}
             border={index === services.length - 1 ? "0 0 40px 0" : "0px"}
+            id={service.id}
           />
         ))}
       </div>
