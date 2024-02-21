@@ -48,15 +48,17 @@ const Navbar = () => {
     setHovered(false);
   };
 
-  const handleMenuClick = () => {
-    setMenuOpen(!menuOpen);
-    if (menuOpen) {
-      document.getElementsByTagName("body")[0].style =
-        "height: 100%; overflow: hidden;";
-    } else {
-      document.getElementsByTagName("body")[0].style =
-        "height: unset; overflow: unset;";
-    }
+  const handleMenuOpen = () => {
+    setMenuOpen(true);
+    document.getElementsByTagName("body")[0].style =
+      "height: 100%; overflow: hidden;";
+    console.log("pressed");
+  };
+
+  const handleMenuClose = () => {
+    setMenuOpen(false);
+    document.getElementsByTagName("body")[0].style =
+      "height: unset; overflow: unset;";
     console.log("pressed");
   };
 
@@ -162,11 +164,7 @@ const Navbar = () => {
 
             <div className={styles.right_lang}>
               <div className={styles.toggle}>
-                <Button
-                  text="MENU"
-                  type="btn--menu"
-                  onClick={handleMenuClick}
-                />
+                <Button text="MENU" type="btn--menu" onClick={handleMenuOpen} />
               </div>
               <Button text="" type="btn--lang" onClick={toggleLang} />
               <h1>PT</h1>
@@ -182,7 +180,7 @@ const Navbar = () => {
         <div className={styles.menu_exitButton_container}>
           <IoClose
             className={styles.menu_exitButton}
-            onClick={handleMenuClick}
+            onClick={handleMenuClose}
           />
         </div>
         <div className={styles.menu_link_list}></div>
