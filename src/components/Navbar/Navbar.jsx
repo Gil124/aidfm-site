@@ -165,7 +165,7 @@ const Navbar = () => {
                 ? services.map((link) => (
                     <Link reloadDocument
                       key={nanoid()}
-                      href={link.ref}
+                      to={link.ref}
                       className={styles.menuLink}
                     >
                       {link.title}
