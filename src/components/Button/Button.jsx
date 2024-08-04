@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./Button.module.css";
 import { IoIosArrowForward } from "react-icons/io";
 import pt from "../../assets/lang-pt.png";
+import en from "../../assets/lang-en.svg";
+import { getLang } from "../Navbar/Navbar";
 
 const STYLES = [styles.primary, styles.home, styles.lang, styles.menu];
 
@@ -21,6 +23,8 @@ function Button({ text, type, onClick }) {
           onClick={onClick}
           style={{ backgroundImage: `url(${pt})` }}
         >
+          <img src={getLang() === "PT" ? pt : en} alt="Portuguese Flag" />
+          <img src={getLang() === "PT" ? en : pt} alt="English Flag" />
           {text}
         </button>
       );

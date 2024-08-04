@@ -13,6 +13,8 @@ import {
 } from "react-icons/io5";
 import logoImg from "../../assets/logo-nav.svg";
 
+
+
 const about = {
   url: "/about",
   title: "Sobre Nós",
@@ -65,7 +67,8 @@ function Footer() {
   const currentTitleRef = useRef(currentTitle);
 
   function handleClick(number) {
-    setCurrentTitle(number);
+    if (currentTitle === number) setCurrentTitle(0);
+    else setCurrentTitle(number);
     currentTitleRef.current = number;
   }
 

@@ -1,24 +1,38 @@
-[
-  {
+{
+  "PT": {
     "navbar": {
-      "titles": ["Sobre Nós", "Serviços", "Projetos", "Junte-se a Nós"],
+      "titles": [
+        { "title": "Sobre Nós", "url": "/about" },
+        { "title": "Serviços", "url": "/services" },
+        { "title": "Projetos", "url": "/projects" },
+        { "title": "Junte-se a Nós", "url": "/join" }
+      ],
       "subtitles": [
         [
-          "Quem Somos",
-          "Orgãos Sociais",
-          "Centros de Investigação",
-          "Informação Institucional"
+          { "title": "Quem Somos", "url": "/about" },
+          { "title": "Orgãos Sociais", "url": "/about/team" },
+          { "title": "Centros de Investigação", "url": "/about/ci" },
+          { "title": "Informação Institucional", "url": "/about/docs" }
         ],
         [
-          "Organização de eventos",
-          "Gestão Administrativa",
-          "Aquisição de Serviços",
-          "Relatórios de Projeto",
-          "Minimização de Custos",
-          "Apoio à Investigação"
+          { "title": "Organização de eventos", "url": "/services#events" },
+          { "title": "Gestão Administrativa", "url": "/services#admin" },
+          { "title": "Aquisição de Serviços", "url": "/services#services" },
+          { "title": "Relatórios de Projeto", "url": "/services#projects" },
+          { "title": "Minimização de Custos", "url": "/services#costs" },
+          { "title": "Apoio à Investigação", "url": "/services#research" }
         ],
-        ["Projeto 1", "Projeto 2", "Projeto 3", "Projeto 4", "Projeto 5"],
-        ["Benefícios", "Candidate-se"]
+        [
+          { "title": "Projeto 1", "url": "/projects#1" },
+          { "title": "Projeto 2", "url": "/projects#2" },
+          { "title": "Projeto 3", "url": "/projects#3" },
+          { "title": "Projeto 4", "url": "/projects#4" },
+          { "title": "Projeto 5", "url": "/projects#5" }
+        ],
+        [
+          { "title": "Benefícios", "url": "/join#ben" },
+          { "title": "Candidate-se", "url": "/join#cand" }
+        ]
       ]
     },
     "homepage": {
@@ -296,26 +310,40 @@
       }
     ]
   },
-  {
+  "EN": {
     "navbar": {
-      "titles": ["About Us", "Services", "Projects", "Join Us"],
+      "titles": [
+        { "title": "About Us", "url": "/about" },
+        { "title": "Services", "url": "/services" },
+        { "title": "Projects", "url": "/projects" },
+        { "title": "Join Us", "url": "/join" }
+      ],
       "subtitles": [
         [
-          "About Us",
-          " Board of Directors ",
-          "Research Centers",
-          "Institutional Information"
+          { "title": "About Us", "url": "/about" },
+          { "title": "Governing Bodies", "url": "/about/team" },
+          { "title": "Research Centers", "url": "/about/ci" },
+          { "title": "Institutional Information", "url": "/about/docs" }
         ],
         [
-          "Organization of events",
-          "Administrative Management",
-          "Purchase of Services",
-          "Project Reports",
-          "Cost Minimization",
-          "Research Support"
+          { "title": "Organization of events", "url": "/services#events" },
+          { "title": "Administrative Management", "url": "/services#admin" },
+          { "title": "Services Procurement", "url": "/services#services" },
+          { "title": "Project Reports", "url": "/services#projects" },
+          { "title": "Cost Minimization", "url": "/services#costs" },
+          { "title": "Research Support", "url": "/services#research" }
         ],
-        ["Project 1", "Project 2", "Project 3", "Project 4", "Project 5"],
-        ["Benefits", "Apply"]
+        [
+          { "title": "Project 1", "url": "/projects#1" },
+          { "title": "Project 2", "url": "/projects#2" },
+          { "title": "Project 3", "url": "/projects#3" },
+          { "title": "Project 4", "url": "/projects#4" },
+          { "title": "Project 5", "url": "/projects#5" }
+        ],
+        [
+          { "title": "Benefits", "url": "/join#ben" },
+          { "title": "Apply", "url": "/join#cand" }
+        ]
       ]
     },
     "homepage": {
@@ -593,4 +621,4 @@
       }
     ]
   }
-]
+}

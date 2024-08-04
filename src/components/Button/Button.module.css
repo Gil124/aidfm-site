@@ -1,10 +1,26 @@
 .lang {
   display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
   width: 45px;
   height: 30px;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
   border-radius: 20px;
+}
+
+.lang img{
+  transform: translateX(-3px);
+  width: 60px;
+  transition: all 0.3s;
+}
+
+.lang:hover img{
+  transform: translateX(-68px);
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
 .home {
@@ -79,6 +95,13 @@
     font-weight: 400;
     margin: 20px;
     cursor: pointer;
+    scale: 100%;
     transition: all 0.1s ease-out;
+  }
+
+  .lang:hover img{
+    transform: translateX(-3px);
+    transition: all 0.3s;
+    cursor: pointer;
   }
 }
