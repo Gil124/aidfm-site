@@ -24,12 +24,11 @@
 
 @media only screen and (max-width: 1000px) {
   .container {
-    flex: 1 1 calc(50%- 10px);
-    width: calc(50% - 10px);
+    width: 18rem;
     border: 2px solid #1e1484;
     padding: 10px;
     border-radius: 20px;
-    aspect-ratio: 1/1;
+    aspect-ratio: 19/10;
     box-shadow: 0px 0px 20px 3px rgba(20, 12, 104, 0.08);
   }
 
