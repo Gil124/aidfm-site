@@ -69,7 +69,7 @@ function Services() {
           />
         ))}
       </div>
-      <h1 className="title-link" style={{margin:"20vh 0"}}>
+      <h1 className="title-link" style={{margin:"20vh 0", fontSize:"32pt"}}>
         Contacte <a href="">Aqui</a> a Nossa Equipa e Deixe-nos Ajudar
       </h1>
     </>

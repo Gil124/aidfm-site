@@ -7,19 +7,27 @@
 }
 
 .button {
-  width: 533px;
-  height: 70px;
+  width: 360px;
+  height: 60px;
   border-radius: 50px;
   background-color: #221b68;
   color: #f8f8fd;
   display: flex;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
   font-family: "Monteserrat", sans-serif;
-  font-size: 36px;
+  font-size: 22px;
   font-weight: 200;
   letter-spacing: 0.72px;
   cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.button:hover {
+  background-color: #2b1fa9;
+  scale: 105%;
+  transition: all 0.3s ease-out;
 }
 
 .symbol {
