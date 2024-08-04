@@ -77,10 +77,17 @@ a {
 @media only screen and (max-width: 1000px) {
   .title {
     font-size: 8vw;
+    text-align: center;
   }
 
   .swiper {
-    height: 40vh;
-    padding-bottom: 4vh;
+    height: 28rem;
+    width: 90%;
+    padding-bottom: 2rem;
   }
+
+  .swiper-button-next, .swiper-button-prev {
+    display: none;
+  }
+
 }

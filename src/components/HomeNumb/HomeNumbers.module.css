@@ -44,15 +44,16 @@
 @media only screen and (max-width: 1000px) {
   .numbers {
     margin: 0 0;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
     flex: auto;
   }
 
   .container {
     width: 90%;
-    height: auto;
+    height: 100%;
     background: none !important;
     box-shadow: none;
+    margin-bottom: 4rem;
   }
 
   .container h1 {
@@ -60,7 +61,7 @@
     color: #2b1fa9;
     position: relative;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: -200;
   }
 
   .data__container {

@@ -40,76 +40,84 @@ const projects = [
 
 function HomeProjects() {
   return (
-    <Fade className={styles.container} direction="up" triggerOnce fraction={0.5}>
-      <Swiper
-        slidesPerView={window.innerWidth < 1000 ? 1.1 : 1.8}
-        spaceBetween={30}
-        loop={true}
-        centeredSlides={true}
-        keyboard={{
-          enabled: true,
-        }}
-        autoplay={{
-          delay: 6000,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Keyboard, Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+    <>
+      <h1 className="title">Os Nossos Projetos</h1>
+      <Fade
+        className={styles.container}
+        direction="up"
+        triggerOnce
+        fraction={0.5}
       >
-        <SwiperSlide style={{ backgroundImage: `url(${project1})` }}>
-          {({ isActive }) =>
-            isActive ? (
-              <div className={styles.textContainer}>
-                <h3 className={styles.title}>{projects[0].title}</h3>
-                <p className={styles.text}>{projects[0].text}</p>
-              </div>
-            ) : (
-              <></>
-            )
-          }
-        </SwiperSlide>
-        <SwiperSlide style={{ backgroundImage: `url(${project2})` }}>
-          {({ isActive }) =>
-            isActive ? (
-              <div className={styles.textContainer}>
-                <h3 className={styles.title}>{projects[1].title}</h3>
-                <p className={styles.text}>{projects[1].text}</p>
-              </div>
-            ) : (
-              <></>
-            )
-          }
-        </SwiperSlide>
-        <SwiperSlide style={{ backgroundImage: `url(${project3})` }}>
-          {({ isActive }) =>
-            isActive ? (
-              <div className={styles.textContainer}>
-                <h3 className={styles.title}>{projects[2].title}</h3>
-                <p className={styles.text}>{projects[2].text}</p>
-              </div>
-            ) : (
-              <></>
-            )
-          }
-        </SwiperSlide>
-        <SwiperSlide style={{ backgroundImage: `url(${project4})` }}>
-          {({ isActive }) =>
-            isActive ? (
-              <div className={styles.textContainer}>
-                <h3 className={styles.title}>{projects[3].title}</h3>
-                <p className={styles.text}>{projects[3].text}</p>
-              </div>
-            ) : (
-              <></>
-            )
-          }
-        </SwiperSlide>
-      </Swiper>
+        <Swiper
+          slidesPerView={window.innerWidth < 1000 ? 1.1 : 1.8}
+          spaceBetween={30}
+          loop={true}
+          centeredSlides={true}
+          keyboard={{
+            enabled: true,
+          }}
+          autoplay={{
+            delay: 6000,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Keyboard, Autoplay, Pagination, Navigation]}
+          className="mySwiper"
+        >
+          <SwiperSlide style={{ backgroundImage: `url(${project1})` }}>
+            {({ isActive }) =>
+              isActive ? (
+                <div className={styles.textContainer}>
+                  <h3 className={styles.title}>{projects[0].title}</h3>
+                  <p className={styles.text}>{projects[0].text}</p>
+                </div>
+              ) : (
+                <></>
+              )
+            }
+          </SwiperSlide>
+          <SwiperSlide style={{ backgroundImage: `url(${project2})` }}>
+            {({ isActive }) =>
+              isActive ? (
+                <div className={styles.textContainer}>
+                  <h3 className={styles.title}>{projects[1].title}</h3>
+                  <p className={styles.text}>{projects[1].text}</p>
+                </div>
+              ) : (
+                <></>
+              )
+            }
+          </SwiperSlide>
+          <SwiperSlide style={{ backgroundImage: `url(${project3})` }}>
+            {({ isActive }) =>
+              isActive ? (
+                <div className={styles.textContainer}>
+                  <h3 className={styles.title}>{projects[2].title}</h3>
+                  <p className={styles.text}>{projects[2].text}</p>
+                </div>
+              ) : (
+                <></>
+              )
+            }
+          </SwiperSlide>
+          <SwiperSlide style={{ backgroundImage: `url(${project4})` }}>
+            {({ isActive }) =>
+              isActive ? (
+                <div className={styles.textContainer}>
+                  <h3 className={styles.title}>{projects[3].title}</h3>
+                  <p className={styles.text}>{projects[3].text}</p>
+                </div>
+              ) : (
+                <></>
+              )
+            }
+          </SwiperSlide>
+        </Swiper>
       </Fade>
+    </>
   );
 }
 

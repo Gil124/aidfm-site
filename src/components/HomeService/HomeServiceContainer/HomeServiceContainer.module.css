@@ -137,6 +137,13 @@
     padding: 2px 10px;
   }
 
+  .container:hover .button {
+    background-color: #f8f8fd;
+    color: #211b68;
+    scale: 130%;
+    transition: all 0.3s;
+  }
+
   .arrow {
     margin-left: 0.8vw;
     color: #211b68;
