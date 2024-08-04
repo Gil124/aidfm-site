@@ -1,0 +1,596 @@
+[
+  {
+    "navbar": {
+      "titles": ["Sobre Nós", "Serviços", "Projetos", "Junte-se a Nós"],
+      "subtitles": [
+        [
+          "Quem Somos",
+          "Orgãos Sociais",
+          "Centros de Investigação",
+          "Informação Institucional"
+        ],
+        [
+          "Organização de eventos",
+          "Gestão Administrativa",
+          "Aquisição de Serviços",
+          "Relatórios de Projeto",
+          "Minimização de Custos",
+          "Apoio à Investigação"
+        ],
+        ["Projeto 1", "Projeto 2", "Projeto 3", "Projeto 4", "Projeto 5"],
+        ["Benefícios", "Candidate-se"]
+      ]
+    },
+    "homepage": {
+      "hero": {
+        "title": "Investigação",
+        "subtitle": "Desenvolvimento",
+        "button": "Saiba mais"
+      },
+      "services": {
+        "title": "Os Nossos Serviços",
+        "content": [
+          "Organização de eventos",
+          "Gestão Administrativa",
+          "Aquisição de Serviços",
+          "Relatórios de Projeto",
+          "Minimização de Custos",
+          "Apoio à Investigação"
+        ],
+        "button": "Mais"
+      },
+      "numbers": {
+        "title": "Os Nossos Números",
+        "content": ["Colaboradores", "Projetos", "Parcerias", "Investigadores"]
+      },
+      "projects": [
+        {
+          "title": "Projeto 1",
+          "content": "Descrição do projeto 1"
+        },
+        {
+          "title": "Projeto 2",
+          "content": "Descrição do projeto 2"
+        },
+        {
+          "title": "Projeto 3",
+          "content": "Descrição do projeto 3"
+        },
+        {
+          "title": "Projeto 4",
+          "content": "Descrição do projeto 4"
+        },
+        {
+          "title": "Projeto 5",
+          "content": "Descrição do projeto 5"
+        }
+      ]
+    },
+    "about": {
+      "history": {
+        "title": "A Nossa História",
+        "content": [
+          {
+            "date": "1993",
+            "description": "A AIDFM foi fundada pelo senhor João dia 10 de outubro de 1993 com aprovação do Presidente da Républica"
+          },
+          {
+            "date": "1994",
+            "description": "Após a criação da Comissão Instaladora em dezembro de 1994, a AIDFM começou suas atividades no final do mesmo ano."
+          },
+          {
+            "date": "1995",
+            "description": "Em janeiro de 1995, a primeira Direção foi eleita e trabalhou para garantir uma organização eficaz da associação."
+          },
+          {
+            "date": "2000",
+            "description": "Posteriormente, a AIDFM foi reconhecida como pessoa coletiva de utilidade pública em março de 2000, pelo Primeiro-ministro António Guterres."
+          },
+          {
+            "date": "2009",
+            "description": "Em abril de 2009, foi também reconhecida com o Estatuto de Mecenato Científico pelo Ministro da Ciência e pelo Secretário de Estado dos Assuntos Fiscais."
+          }
+        ]
+      },
+      "mission": {
+        "title": "Missão, Visão e Valores",
+        "content": {
+          "mission": {
+            "title": "Missão",
+            "content": "A nossa missão é promover e desenvolver atividades de ensino, formação e investigação científica, bem como criar infraestruturas médicas e tecnológicas."
+          },
+          "vision": {
+            "title": "Visão",
+            "content": "A AIDFM é uma instituição de excelência e referência em ensino, formação e investigação científica."
+          },
+          "values": [
+            "Conhecimento",
+            "Inovação",
+            "Qualidade",
+            "Transparência",
+            "Responsabilidade",
+            "Proximidade",
+            "Flexibilidade e Cooperação"
+          ]
+        }
+      },
+      "objectives": {
+        "title": "Objetivos",
+        "content": [
+          {
+            "title": "Realizar",
+            "description": "formações e divulgações técnicas da FMUL"
+          },
+          {
+            "title": "Promover",
+            "description": "e apoiar atividades de investigação"
+          },
+          {
+            "title": "Divulgar",
+            "description": "e aplicar resultados de pesquisas no meio empresarial"
+          },
+          {
+            "title": "Conceder",
+            "description": "bolsas de estudo e subsídios para ensino e pesquisa"
+          },
+          {
+            "title": "Registar",
+            "description": "e explorar patentes"
+          },
+          {
+            "title": "Participar",
+            "description": "em concursos nacionais e internacionais"
+          },
+          {
+            "title": "Apoiar",
+            "description": "a montagem de laboratórios"
+          }
+        ]
+      },
+      "infoInst": "Informação Institucional"
+    },
+    "org": {
+      "title": "Orgãos Sociais",
+      "description": "As nossa equipas são formadas por membros de elite de todas as àreas da medicina, dividos em: Assembleia Geral, Conselho Fiscal e Direção.",
+      "content": [
+        {
+          "title": "Direção",
+          "content": [
+            {
+              "name": "Prof. Doutor José Fernando de Freitas Velosa",
+              "role": "Presidente",
+              "description": "O Prof. Doutor José Fernando de Freitas Velosa é o presidente da AIDFM desde 2010."
+            },
+            {
+              "name": "Prof. Doutor António Cândido Vaz Carneiro",
+              "role": "Vice-Presidente",
+              "description": "O Prof. Doutor António Cândido Vaz Carneiro é o vice-presidente da AIDFM desde 2010."
+            },
+            {
+              "name": "Prof. Doutor Rui Tato Marinho",
+              "role": "Secretário",
+              "description": "O Prof. Doutor Rui Tato Marinho é o secretário da AIDFM desde 2010."
+            },
+            {
+              "name": "Profª. Doutora Maria Isabel Pavão Petiz",
+              "role": "Vogal",
+              "description": "A Profª. Doutora Maria Isabel Pavão Petiz é vogal da AIDFM desde 2010."
+            },
+            {
+              "name": "Prof. Doutor António Eduardo Pais Falcão Barbosa Martins",
+              "role": "Vogal",
+              "description": "O Prof. Doutor António Eduardo Pais Falcão Barbosa Martins é vogal da AIDFM desde 2010."
+            }
+          ]
+        },
+        {
+          "title": "Assembleia Geral",
+          "content": [
+            {
+              "name": "Prof. Doutor Fausto José da Conceição Alexandre Pinto",
+              "role": "Presidente",
+              "description": "O Prof. Doutor Fausto José da Conceição Alexandre Pinto é o presidente da Assembleia Geral da AIDFM desde 2010."
+            },
+            {
+              "name": "Prof. Doutor Fernando Manuel Godinho Rodrigues",
+              "role": "Vice-Presidente",
+              "description": "O Prof. Doutor Fernando Manuel Godinho Rodrigues é o vice-presidente da Assembleia Geral da AIDFM desde 2010."
+            },
+            {
+              "name": "Prof. Doutor Rui Gentil de Portugal e Vasconcelos Fernandes",
+              "role": "Secretário",
+              "description": "O Prof. Doutor Rui Gentil de Portugal e Vasconcelos Fernandes é o secretário da Assembleia Geral da AIDFM desde 2010."
+            }
+          ]
+        },
+        {
+          "title": "Conselho Fiscal",
+          "content": [
+            {
+              "name": "Prof. Doutor Joaquim Alexandre Ribeiro",
+              "role": "Presidente",
+              "description": "O Prof. Doutor Joaquim Alexandre Ribeiro é o presidente do Conselho Fiscal da AIDFM desde 2010."
+            },
+            {
+              "name": "Profª. Doutora Maria José Diógenes",
+              "role": "Vogal",
+              "description": "A Profª. Doutora Maria José Diógenes é vogal do Conselho Fiscal da AIDFM desde 2010."
+            },
+            {
+              "name": "Prof. Doutor Mamede Alves de Carvalho",
+              "role": "Vogal",
+              "description": "O Prof. Doutor Mamede Alves de Carvalho é vogal do Conselho Fiscal da AIDFM desde 2010."
+            }
+          ]
+        }
+      ]
+    },
+    "research": {
+      "content": [
+        {
+          "sila": "CCUL",
+          "title": "Centro Cardiovascular da Universidade de Lisboa",
+          "description": "Um instituto de investigação biomédica empenhado em melhorar a saúde e os cuidados de saúde em todo o mundo, seguindo o padrão de excelência em investigação, cuidados clínicos e educação médica."
+        },
+        {
+          "sila": "ISAMB",
+          "title": "Instituto de Saúde Ambietal",
+          "description": "É um centro de investigação inteiramente dedicado à saúde ambiental."
+        },
+        {
+          "sila": "CEMBE",
+          "title": "Centro de Estudos de Medicina Baseada na Evidência",
+          "description": "Uma unidade estrutural da Faculdade de Medicina da Universidade de Lisboa, criado com o objetivo de difundir os princípios da medicina baseada na evidência."
+        },
+        {
+          "title": "Centro de Bioética",
+          "description": "Tem como objetivos gerais promover o estudo e divulgação de conhecimentos científicos, investigar, formar e/ ou colaborar na formação no âmbito da bioética, bem como estabelecer os contactos nacionais e internacionais que para isso considerar necessários."
+        },
+        {
+          "title": "Centro de Estudos Egas Moniz",
+          "description": "Unidades de Investigação com o objetivo a Investigação Científica na área que hoje designamos por Neurociências Clínicas, e que inclui a neurologia, a neurocirurgia e a psiquiatria."
+        }
+      ]
+    },
+    "infoInst": {
+      "title": "Informação Institucional",
+      "content": [
+        {
+          "title": "Natureza",
+          "description": "A AIDFM é uma associação científica e tecnológica, sem fins lucrativos e de natureza privada, detentora do estatuto de Utilidade Pública que se rege pelos estatutos publicados no Diário da república a 24 de Setembro de 2003."
+        },
+        {
+          "title": "Estatutos",
+          "description": "A Associação para Investigação e Desenvolvimento da Faculdade de Medicina foi constituída por escritura notarial em Fevereiro de 1993, tendo por objetivo inicial apoiar a fase de desenvolvimento e renovação (estrutural e pedagógico-científica) que estava a ser encetada pela Faculdade de Medicina de Lisboa (FMUL).\n Diversos condicionalismos determinaram que a atividade da AIDFM tivesse início somente no final de 1994, sendo a sua primeira Direção eleita em Janeiro de 1995, tendo como tarefa prioritária um conjunto de ações que permitissem uma organização eficaz, possibilitando o desejável funcionamento da AIDFM. \n Posteriormente, houve necessidade de adequar os Estatutos a exigências específicas à funcionalidade pretendida e promovendo uma melhor inter-relação com a FMUL."
+        },
+        {
+          "title": "Plano de Igualdade de Género",
+          "description": "A AIDFM implementou um Plano de Igualdade de Género com o objetivo de garantir a equidade e a igualdade, no ambiente laboral e projetos de investigação."
+        }
+      ]
+    },
+    "services": [
+      {
+        "title": "Organização de eventos",
+        "description": "A organização de eventos tem vindo a desempenhar um papel cada vez mais significativo na atualidade a nível económico e social.\n Na AIDFM contamos já com mais de XXXX eventos realizados, destacamo-nos principalmente por congressos e cursos pós-graduados, que promovem o melhoramento de técnicas médicas e cirúrgicas. Desde então temos cada vez mais procurado evoluir, de modo a continuarmos a ter um impacto significativo na vida de vários profissionais de saúde e organizações."
+      },
+      {
+        "title": "Gestão Administrativa",
+        "description": "A gestão administrativa, de recursos humanos e financeira, são as grandes áreas essenciais para o devido funcionamento de qualquer organização.\n Na AIDFM contamos com estas áreas separadas por departamentos, coordenados por líderes especializados e preparados para trabalhar em equipa, pois apesar de diferentes, estes temas são interdependentes e todos trabalham em conjunto, de modo a garantir o nosso sucesso e sustentabilidade."
+      },
+      {
+        "title": "Minimização de Custos",
+        "description": "Na AIDFM, mais propriamente no nosso departamento financeiro, procuramos estabelecer estratégias e práticas, onde analisamos detalhadamente custos, negociamos com parceiros, planeamos e estabelecemos orçamentos para que possamos estabelecer o bom funcionamento económico e social na nossa organização."
+      },
+      {
+        "title": "Aquisição de Serviços",
+        "description": "Na AIDFM, mais propriamente no nosso departamento financeiro, procuramos estabelecer estratégias e práticas, onde analisamos detalhadamente custos, negociamos com parceiros, planeamos e estabelecemos orçamentos para que possamos estabelecer o bom funcionamento económico e social na nossa organização."
+      },
+      {
+        "title": "Relatórios de Projeto",
+        "description": "Na AIDFM, mais propriamente no nosso departamento financeiro, procuramos estabelecer estratégias e práticas, onde analisamos detalhadamente custos, negociamos com parceiros, planeamos e estabelecemos orçamentos para que possamos estabelecer o bom funcionamento económico e social na nossa organização."
+      },
+      {
+        "title": "Apoio à Investigação",
+        "description": "O apoio à investigação é o principal foco da AIDFM. Fornecemos apoio a financiamentos, à atribuição de bolsas de estudo, a organizações e ainda à coordenação e divulgação científica.\n Através da investigação, pretendemos cada vez mais impulsionar o avanço da ciência e do conhecimento, resultando na aprendizagem de novas técnicas, tratamentos médicos e descobertas nos diferentes campos da medicina.\n Este apoio é fundamental para o progresso, não só da nossa organização, mas também para o desenvolvimento científicos."
+      }
+    ]
+  },
+  {
+    "navbar": {
+      "titles": ["About Us", "Services", "Projects", "Join Us"],
+      "subtitles": [
+        [
+          "About Us",
+          " Board of Directors ",
+          "Research Centers",
+          "Institutional Information"
+        ],
+        [
+          "Organization of events",
+          "Administrative Management",
+          "Purchase of Services",
+          "Project Reports",
+          "Cost Minimization",
+          "Research Support"
+        ],
+        ["Project 1", "Project 2", "Project 3", "Project 4", "Project 5"],
+        ["Benefits", "Apply"]
+      ]
+    },
+    "homepage": {
+      "hero": {
+        "title": "Research",
+        "subtitle": "Development",
+        "button": "Learn more"
+      },
+      "services": {
+        "title": "Our Services",
+        "content": [
+          "Event organization",
+          "Administrative Management",
+          "Acquisition of Services",
+          "Project Reports",
+          "Cost Minimization",
+          "Research Support"
+        ],
+        "button": "More"
+      },
+      "numbers": {
+        "title": "Our Numbers",
+        "content": ["Staff", "Projects", "Partnerships", "Researchers"]
+      },
+      "projects": [
+        {
+          "title": "Project 1",
+          "content": "Description of project 1"
+        },
+        {
+          "title": "Project 2",
+          "content": "Project 2 description"
+        },
+        {
+          "title": "Project 3",
+          "content": "Description of project 3"
+        },
+        {
+          "title": "Project 4",
+          "content": "Project 4 description"
+        },
+        {
+          "title": "Project 5",
+          "content": "Description of project 5"
+        }
+      ]
+    },
+    "about": {
+      "history": {
+        "title": "Our History",
+        "content": [
+          {
+            "date": "1993",
+            "description": "The AIDFM was founded by Mr. João on October 10, 1993 with the approval of the President of the Republic"
+          },
+          {
+            "date": "1994",
+            "description": "After the creation of the Installation Commission in December 1994, the AIDFM began its activities at the end of the same year."
+          },
+          {
+            "date": "1995",
+            "description": "In January 1995, the first Board of Directors was elected and worked to ensure the effective organization of the association."
+          },
+          {
+            "date": "2000",
+            "description": "Subsequently, the AIDFM was recognized as a legal person of public utility in March 2000 by Prime Minister António Guterres."
+          },
+          {
+            "date": "2009",
+            "description": "In April 2009, it was also recognized with the Scientific Patronage Statute by the Minister of Science and the Secretary of State for Fiscal Affairs."
+          }
+        ]
+      },
+      "mission": {
+        "title": "Mission, Vision and Values",
+        "content": {
+          "mission": {
+            "title": "Mission",
+            "content": "Our mission is to promote and develop teaching, training and scientific research activities, as well as to create medical and technological infrastructures."
+          },
+          "vision": {
+            "title": "Vision",
+            "content": "AIDFM is an institution of excellence and a benchmark in teaching, training and scientific research."
+          },
+          "values": [
+            "Knowledge",
+            "Innovation",
+            "Quality",
+            "Transparency",
+            "Responsibility",
+            "Proximity",
+            "Flexibility and Cooperation"
+          ]
+        }
+      },
+      "objectives": {
+        "title": "Objectives",
+        "content": [
+          {
+            "title": "Realize",
+            "description": "FMUL training and technical presentations"
+          },
+          {
+            "title": "Promote",
+            "description": "and support research activities"
+          },
+          {
+            "title": "Disseminate",
+            "description": "and apply research results in the business environment"
+          },
+          {
+            "title": "Grant",
+            "description": "scholarships and grants for teaching and research"
+          },
+          {
+            "title": "Register",
+            "description": "and exploit patents"
+          },
+          {
+            "title": "Participate",
+            "description": "in national and international competitions"
+          },
+          {
+            "title": "Support",
+            "description": "setting up laboratories"
+          }
+        ]
+      },
+      "infoInst": "Institutional Information"
+    },
+    "org": {
+      "title": "Orgãos Sociais",
+      "description": "Our teams are made up of elite members from all areas of medicine, divided into: General Assembly, Supervisory Board and Board of Directors.",
+      "content": [
+        {
+          "title": "Board",
+          "content": [
+            {
+              "name": "Prof. Doutor José Fernando de Freitas Velosa",
+              "role": "President",
+              "description": "Prof. Doctor José Fernando de Freitas Velosa has been the president of the AIDFM since 2010."
+            },
+            {
+              "name": "Prof. Doutor António Cândido Vaz Carneiro",
+              "role": "Vice-President",
+              "description": "Prof. Doctor António Cândido Vaz Carneiro has been vice-president of the AIDFM since 2010."
+            },
+            {
+              "name": "Prof. Doctor Rui Tato Marinho",
+              "role": "Secretary",
+              "description": "Prof. Doctor Rui Tato Marinho has been the secretary of the AIDFM since 2010."
+            },
+            {
+              "name": "Prof. Dr. Maria Isabel Pavão Petiz",
+              "role": "Member",
+              "description": "Prof. Dr. Maria Isabel Pavão Petiz has been a member of the AIDFM since 2010."
+            },
+            {
+              "name": "Prof. Doutor António Eduardo Pais Falcão Barbosa Martins",
+              "role": "Member",
+              "description": "Prof. Doctor António Eduardo Pais Falcão Barbosa Martins has been a member of the AIDFM since 2010."
+            }
+          ]
+        },
+        {
+          "title": "General Assembly",
+          "content": [
+            {
+              "name": "Prof. Doutor Fausto José da Conceição Alexandre Pinto",
+              "role": "Chairman",
+              "description": "Prof. Doctor Fausto José da Conceição Alexandre Pinto has been the president of the AIDFM General Assembly since 2010."
+            },
+            {
+              "name": "Prof. Doctor Fernando Manuel Godinho Rodrigues",
+              "role": "Vice-President",
+              "description": "Prof. Doctor Fernando Manuel Godinho Rodrigues has been vice-president of the AIDFM General Assembly since 2010."
+            },
+            {
+              "name": "Prof. Doutor Rui Gentil de Portugal e Vasconcelos Fernandes",
+              "role": "Secretary",
+              "description": "Prof. Doctor Rui Gentil de Portugal e Vasconcelos Fernandes has been the secretary of the AIDFM General Assembly since 2010."
+            }
+          ]
+        },
+        {
+          "title": "Supervisory Board",
+          "content": [
+            {
+              "name": "Prof. Doutor Joaquim Alexandre Ribeiro",
+              "role": "Chairman",
+              "description": "Prof. Doctor Joaquim Alexandre Ribeiro has been chairman of the AIDFM's Supervisory Board since 2010."
+            },
+            {
+              "name": "Prof. Dr. Maria José Diógenes",
+              "role": "Member",
+              "description": "Prof. Dr. Maria José Diógenes has been a member of the AIDFM Supervisory Board since 2010."
+            },
+            {
+              "name": "Prof. Doctor Mamede Alves de Carvalho",
+              "role": "Member",
+              "description": "Prof. Doutor Mamede Alves de Carvalho has been a member of the AIDFM Supervisory Board since 2010."
+            }
+          ]
+        }
+      ]
+    },
+    "research": {
+      "content": [
+        {
+          "sila": "CCUL",
+          "title": "Cardiovascular Center of the University of Lisbon",
+          "description": "A biomedical research institute committed to improving health and healthcare worldwide, following the standard of excellence in research, clinical care and medical education."
+        },
+        {
+          "sila": "ISAMB",
+          "title": "Institute of Environmental Health",
+          "description": "It is a research center entirely dedicated to environmental health."
+        },
+        {
+          "sila": "CEMBE",
+          "title": "Center for Evidence-Based Medicine Studies",
+          "description": "A structural unit of the Faculty of Medicine of the University of Lisbon, created with the aim of disseminating the principles of evidence-based medicine."
+        },
+        {
+          "title": "Bioethics Center",
+          "description": "Its general objectives are to promote the study and dissemination of scientific knowledge, to research, train and/or collaborate in training in the field of bioethics, as well as to establish the national and international contacts it deems necessary."
+        },
+        {
+          "title": "Centro de Estudos Egas Moniz",
+          "description": "Research Units with the aim of Scientific Research in the area we now call Clinical Neurosciences, which includes neurology, neurosurgery and psychiatry."
+        }
+      ]
+    },
+    "infoInst": {
+      "title": "Institutional Information",
+      "content": [
+        {
+          "title": "Nature",
+          "description": "The AIDFM is a non-profit scientific and technological association of a private nature, which holds Public Utility status and is governed by the statutes published in the Official Gazette on September 24, 2003."
+        },
+        {
+          "title": "Statutes",
+          "description": "The Association for Research and Development of the Faculty of Medicine was set up by notarial deed in February 1993, with the initial aim of supporting the phase of development and renewal (structural and pedagogical-scientific) that was being embarked upon by the Faculty of Medicine of Lisbon (FMUL).\n Various constraints meant that the AIDFM's activity only began at the end of 1994, and its first Board of Directors was elected in January 1995, with the priority task being a set of actions that would allow for effective organization, enabling the desirable functioning of the AIDFM. \n Subsequently, the Statutes had to be adapted to the specific requirements of the intended functionality and to promote a better interrelationship with FMUL."
+        },
+        {
+          "title": "Gender Equality Plan",
+          "description": "The AIDFM has implemented a Gender Equality Plan with the aim of guaranteeing fairness and equality in the work environment and research projects."
+        }
+      ]
+    },
+    "services": [
+      {
+        "title": "Organization of events",
+        "description": "The organization of events has been playing an increasingly significant role today at an economic and social level.\n At AIDFM we have already held more than XXXX events, we stand out mainly for congresses and postgraduate courses, which promote the improvement of medical and surgical techniques. Since then we have increasingly sought to evolve so that we can continue to have a significant impact on the lives of various health professionals and organizations."
+      },
+      {
+        "title": "Administrative Management",
+        "description": "Administrative, human resources and financial management are the major areas that are essential for the proper functioning of any organization.\n At AIDFM we have these areas separated into departments, coordinated by specialized leaders who are prepared to work as a team, because although these topics are different, they are interdependent and all work together to ensure our success and sustainability."
+      },
+      {
+        "title": "Cost Minimization",
+        "description": "At AIDFM, more specifically in our finance department, we try to establish strategies and practices, where we analyse costs in detail, negotiate with partners, plan and establish budgets so that we can establish good economic and social functioning in our organization."
+      },
+      {
+        "title": "Acquisition of Services",
+        "description": "At AIDFM, more specifically in our finance department, we try to establish strategies and practices, where we analyze costs in detail, negotiate with partners, plan and establish budgets so that we can establish the proper economic and social functioning in our organization."
+      },
+      {
+        "title": "Project Reports",
+        "description": "At AIDFM, more specifically in our finance department, we try to establish strategies and practices, where we analyze costs in detail, negotiate with partners, plan and establish budgets so that we can establish good economic and social functioning in our organization."
+      },
+      {
+        "title": "Research Support",
+        "description": "Research support is AIDFM's main focus. We provide support for funding, scholarships, organizations and scientific coordination and dissemination.\n Through research, we aim to increasingly drive the advancement of science and knowledge, resulting in the learning of new techniques, medical treatments and discoveries in the different fields of medicine.\n This support is fundamental for the progress, not only of our organization, but also for scientific development."
+      }
+    ]
+  }
+]

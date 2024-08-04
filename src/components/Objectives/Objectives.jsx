@@ -2,41 +2,48 @@ import React from 'react'
 import styles from './Objectives.module.css'
 import ObjectiveContainer from './ObjectiveContainer/ObjectiveContainer'
 import { nanoid } from 'nanoid'
+import obj1 from '../../assets/obj1.jpeg'
+import obj2 from '../../assets/obj2.jpeg'
+import obj3 from '../../assets/obj3.jpeg'
+import obj4 from '../../assets/obj4.jpeg'
+import obj5 from '../../assets/obj5.jpeg'
+import obj6 from '../../assets/obj6.jpeg'
+import obj7 from '../../assets/obj7.jpeg'
 
 const obj = [
   {
-  src:"/src/assets/obj1.jpeg",
+  src:obj1,
   desc:"lab",
   title:"Realizar",
   text:"formações e divulgações técnicas da FMUL"
 },
 {
-  src:"/src/assets/obj2.jpeg",
+  src:obj2,
   desc:"investigation lab",
   title:"Promover",
   text:"e apoiar atividades de investigação"
 },{
-  src:"/src/assets/obj3.jpeg",
+  src:obj3,
   desc:"Business meeting",
   title:"Divulgar",
   text:"e aplicar resultados de pesquisas no meio empresarial"
 },{
-  src:"/src/assets/obj4.jpeg",
+  src:obj4,
   desc:"person studying",
   title:"Conceder",
   text:"bolsas de estudo e subsídios para ensino e pesquisa"
 },{
-  src:"/src/assets/obj5.jpeg",
+  src:obj5,
   desc:"person signing paper",
   title:"Registar",
   text:"e explorar patentes"
 },{
-  src:"/src/assets/obj6.jpeg",
+  src:obj6,
   desc:"trophy",
   title:"Participar",
   text:"em concursos nacionais e internacionais"
 },{
-  src:"/src/assets/obj7.jpeg",
+  src:obj7,
   desc:"lab",
   title:"Apoiar",
   text:"a montagem de laboratórios"

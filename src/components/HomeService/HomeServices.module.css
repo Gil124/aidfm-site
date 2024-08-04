@@ -35,14 +35,14 @@
   transition: all 0.4s;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1000px) {
   .services__container {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr)); 
     justify-content: center;
     align-items: center;
-    width: 80%;
-    gap: 4vw;
+    width: fit-content;
+    gap: 2rem;
     align-items: center;
     margin-top: 4.8vw;
     background-color: #f8f8fd;

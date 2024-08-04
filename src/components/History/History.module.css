@@ -115,8 +115,9 @@
 
 .menuContainer p {
   text-align: end;
-  width: 60%;
+  width: 68%;
   font-size: 18pt;
+  padding-right: 40px;
 }
 
 /*right*/
