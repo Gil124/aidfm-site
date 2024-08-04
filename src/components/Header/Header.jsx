@@ -5,7 +5,9 @@ import headerBackground from "../../assets/landing.page.jpeg";
 import { Fade } from "react-awesome-reveal";
 
 function Header() {
-  const handleDiscoverButton = () => {};
+  const handleDiscoverButton = () => {
+    window.location.href = "/about";
+  };
 
   return (
     <div
