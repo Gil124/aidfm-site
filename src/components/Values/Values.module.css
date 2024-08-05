@@ -7,3 +7,13 @@
   align-items: center;
   margin: 35px 0;
 }
+
+@media screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+    margin-top: 4rem;
+    flex-wrap: nowrap;
+  }
+}

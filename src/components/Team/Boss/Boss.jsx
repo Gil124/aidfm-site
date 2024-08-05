@@ -5,7 +5,7 @@ function Boss({ profile, name, role, description }) {
   const [popUpVisibility, setVisibility] = useState(false);
 
   const handleImgClick = () => {
-    setVisibility(true);
+    //setVisibility(true);
   }
   return (
     <>

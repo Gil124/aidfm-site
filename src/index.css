@@ -45,8 +45,8 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #2b1fa9;
   backdrop-filter: blur(1px);
-  font-size: 4vw;
-  margin: 2.5vh 0;
+  font-size: 32pt;
+  margin: 12rem 0;
   text-align: center;
 }
 
@@ -81,14 +81,29 @@ a {
     text-align: center;
   }
 
+  .title-about {
+    font-family: "Montserrat", sans-serif;
+    color: #2b1fa9;
+    backdrop-filter: blur(1px);
+    font-size: 20pt;
+    text-align: center;
+    margin: 0 0;
+  }
+
   .swiper {
     height: 28rem;
-    width: 90%;
+    width: 100%;
+    padding: 0 1.5rem; 
     padding-bottom: 2rem;
   }
 
   .swiper-button-next, .swiper-button-prev {
     display: none;
+  }
+
+  .title-link {
+    margin: 6rem 1rem;
+    font-size: 16pt;
   }
 
 }

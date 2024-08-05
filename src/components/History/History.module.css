@@ -140,3 +140,124 @@
   object-fit: cover;
   border-radius: 20px;
 }
+
+.mobile_container {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    display: none;
+  }
+
+  .mobile_container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: rem;
+    width: 100%;
+    gap: 5rem;
+    background-color: #f8f8fd;
+  }
+
+  .mobile_date {
+    position: relative;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+  }
+
+  .mobile_date_image_left {
+    height: 10rem;
+    width: 90%;
+    margin-left: 10%;
+    border-radius: 0.5rem 0.5rem 0.5rem 5rem;
+    object-fit: cover;
+    box-shadow: 0px 0px 6px 1px #0000006e;
+    filter: brightness(60%);
+  }
+
+  .mobile_date_image_right {
+    height: 10rem;
+    width: 90%;
+    border-radius: 0.5rem 0.5rem 5rem 0.5rem;
+    object-fit: cover;
+    filter: brightness(60%);
+  }
+
+  .mobile_date_title_right {
+    position: absolute;
+    text-align: end;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 100%;
+    padding-right: 10%;
+    font-size: 32pt;
+    font-weight: 700;
+    padding-left: 0px;
+    font-family: "Montserrat", sans-serif;
+    color:white;
+  }
+
+  .mobile_date_title_left {
+    position: absolute;
+    text-align: start;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 100%;
+    padding-left: 10%;
+    font-size: 32pt;
+    font-weight: 700;
+    padding-right: 0px;
+    font-family: "Montserrat", sans-serif;
+    color:white;
+  }
+
+  .mobile_date_text_right {
+    position: absolute;
+    bottom: 0;
+    text-align: start;
+    width:80%;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    font-size: 10pt;
+    font-weight: 600;
+    padding-left: 4px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+  }
+
+  .mobile_date_text_left {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: end;
+    width:80%;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    font-size: 10pt;
+    font-weight: 600;
+    padding-left: 4px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+  }
+
+  .history h1 {
+    width: 100%;
+    font-size: 32pt;
+    font-weight: 700;
+    padding-left: 0px;
+    font-family: "Montserrat", sans-serif;
+    color: #2b1fa9;
+    margin-bottom: 1rem;
+  }
+
+  .history h1 span {
+    font-size: 32pt;
+    font-weight: 700;
+    color: #2b1fa9;
+  }
+}

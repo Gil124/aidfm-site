@@ -69,7 +69,6 @@ function History() {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -85,6 +84,33 @@ function History() {
             .slice(1)
             .join("H")}`}</span>
         </h1>
+        <div className={styles.mobile_container}>
+            <div className={styles.mobile_date}>
+              <img className={styles.mobile_date_image_right} src={history1}/>
+              <h2 className={styles.mobile_date_title_right}>{getContent().about.history.content[0].date}</h2>
+              <p className={styles.mobile_date_text_right}>{getContent().about.history.content[0].description}</p>
+            </div>
+            <div className={styles.mobile_date}>
+              <img className={styles.mobile_date_image_left} src={history2}/>
+              <h2 className={styles.mobile_date_title_left}>{getContent().about.history.content[1].date}</h2>
+              <p className={styles.mobile_date_text_left}>{getContent().about.history.content[1].description}</p>
+            </div>
+            <div className={styles.mobile_date}>
+              <img className={styles.mobile_date_image_right} src={history3}/>
+              <h2 className={styles.mobile_date_title_right}>{getContent().about.history.content[2].date}</h2>
+              <p className={styles.mobile_date_text_right}>{getContent().about.history.content[2].description}</p>
+            </div>
+            <div className={styles.mobile_date}>
+              <img className={styles.mobile_date_image_left} src={history4}/>
+              <h2 className={styles.mobile_date_title_left}>{getContent().about.history.content[3].date}</h2>
+              <p className={styles.mobile_date_text_left}>{getContent().about.history.content[3].description}</p>
+            </div>
+            <div className={styles.mobile_date}>
+              <img className={styles.mobile_date_image_right} src={history5}/>
+              <h2 className={styles.mobile_date_title_right}>{getContent().about.history.content[4].date}</h2>
+              <p className={styles.mobile_date_text_right}>{getContent().about.history.content[4].description}</p>
+            </div>
+        </div>
         <div className={styles.container} onScroll={handleScroll}>
           <div className={styles.menu}>
             <div className={styles.offset}>

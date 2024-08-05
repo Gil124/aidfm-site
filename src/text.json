@@ -31,7 +31,10 @@
               { "title": "ISAMB", "url": "/about/ci#ISAMB" },
               { "title": "CEMBE", "url": "/about/ci#CEMBE" },
               { "title": "Centro de Bioética", "url": "/about/ci#bioethic" },
-              { "title": "Centro de Estudos Egas Moniz", "url": "/about/ci#egas" }
+              {
+                "title": "Centro de Estudos Egas Moniz",
+                "url": "/about/ci#egas"
+              }
             ]
           },
           {
@@ -312,32 +315,35 @@
         }
       ]
     },
-    "services": [
-      {
-        "title": "Organização de eventos",
-        "description": "A organização de eventos tem vindo a desempenhar um papel cada vez mais significativo na atualidade a nível económico e social.\n Na AIDFM contamos já com mais de XXXX eventos realizados, destacamo-nos principalmente por congressos e cursos pós-graduados, que promovem o melhoramento de técnicas médicas e cirúrgicas. Desde então temos cada vez mais procurado evoluir, de modo a continuarmos a ter um impacto significativo na vida de vários profissionais de saúde e organizações."
-      },
-      {
-        "title": "Gestão Administrativa",
-        "description": "A gestão administrativa, de recursos humanos e financeira, são as grandes áreas essenciais para o devido funcionamento de qualquer organização.\n Na AIDFM contamos com estas áreas separadas por departamentos, coordenados por líderes especializados e preparados para trabalhar em equipa, pois apesar de diferentes, estes temas são interdependentes e todos trabalham em conjunto, de modo a garantir o nosso sucesso e sustentabilidade."
-      },
-      {
-        "title": "Minimização de Custos",
-        "description": "Na AIDFM, mais propriamente no nosso departamento financeiro, procuramos estabelecer estratégias e práticas, onde analisamos detalhadamente custos, negociamos com parceiros, planeamos e estabelecemos orçamentos para que possamos estabelecer o bom funcionamento económico e social na nossa organização."
-      },
-      {
-        "title": "Aquisição de Serviços",
-        "description": "Na AIDFM, mais propriamente no nosso departamento financeiro, procuramos estabelecer estratégias e práticas, onde analisamos detalhadamente custos, negociamos com parceiros, planeamos e estabelecemos orçamentos para que possamos estabelecer o bom funcionamento económico e social na nossa organização."
-      },
-      {
-        "title": "Relatórios de Projeto",
-        "description": "Na AIDFM, mais propriamente no nosso departamento financeiro, procuramos estabelecer estratégias e práticas, onde analisamos detalhadamente custos, negociamos com parceiros, planeamos e estabelecemos orçamentos para que possamos estabelecer o bom funcionamento económico e social na nossa organização."
-      },
-      {
-        "title": "Apoio à Investigação",
-        "description": "O apoio à investigação é o principal foco da AIDFM. Fornecemos apoio a financiamentos, à atribuição de bolsas de estudo, a organizações e ainda à coordenação e divulgação científica.\n Através da investigação, pretendemos cada vez mais impulsionar o avanço da ciência e do conhecimento, resultando na aprendizagem de novas técnicas, tratamentos médicos e descobertas nos diferentes campos da medicina.\n Este apoio é fundamental para o progresso, não só da nossa organização, mas também para o desenvolvimento científicos."
-      }
-    ],
+    "services": {
+      "end": ["Contacte", "Aqui", "a Nossa Equipa e Deixe-nos Ajudá-lo"],
+      "content": [
+        {
+          "title": "Organização de eventos",
+          "description": "A organização de eventos tem vindo a desempenhar um papel cada vez mais significativo na atualidade a nível económico e social.\n Na AIDFM contamos já com mais de XXXX eventos realizados, destacamo-nos principalmente por congressos e cursos pós-graduados, que promovem o melhoramento de técnicas médicas e cirúrgicas. Desde então temos cada vez mais procurado evoluir, de modo a continuarmos a ter um impacto significativo na vida de vários profissionais de saúde e organizações."
+        },
+        {
+          "title": "Gestão Administrativa",
+          "description": "A gestão administrativa, de recursos humanos e financeira, são as grandes áreas essenciais para o devido funcionamento de qualquer organização.\n Na AIDFM contamos com estas áreas separadas por departamentos, coordenados por líderes especializados e preparados para trabalhar em equipa, pois apesar de diferentes, estes temas são interdependentes e todos trabalham em conjunto, de modo a garantir o nosso sucesso e sustentabilidade."
+        },
+        {
+          "title": "Minimização de Custos",
+          "description": "Na AIDFM, mais propriamente no nosso departamento financeiro, procuramos estabelecer estratégias e práticas, onde analisamos detalhadamente custos, negociamos com parceiros, planeamos e estabelecemos orçamentos para que possamos estabelecer o bom funcionamento económico e social na nossa organização."
+        },
+        {
+          "title": "Aquisição de Serviços",
+          "description": "Na AIDFM, mais propriamente no nosso departamento financeiro, procuramos estabelecer estratégias e práticas, onde analisamos detalhadamente custos, negociamos com parceiros, planeamos e estabelecemos orçamentos para que possamos estabelecer o bom funcionamento económico e social na nossa organização."
+        },
+        {
+          "title": "Relatórios de Projeto",
+          "description": "Na AIDFM, mais propriamente no nosso departamento financeiro, procuramos estabelecer estratégias e práticas, onde analisamos detalhadamente custos, negociamos com parceiros, planeamos e estabelecemos orçamentos para que possamos estabelecer o bom funcionamento económico e social na nossa organização."
+        },
+        {
+          "title": "Apoio à Investigação",
+          "description": "O apoio à investigação é o principal foco da AIDFM. Fornecemos apoio a financiamentos, à atribuição de bolsas de estudo, a organizações e ainda à coordenação e divulgação científica.\n Através da investigação, pretendemos cada vez mais impulsionar o avanço da ciência e do conhecimento, resultando na aprendizagem de novas técnicas, tratamentos médicos e descobertas nos diferentes campos da medicina.\n Este apoio é fundamental para o progresso, não só da nossa organização, mas também para o desenvolvimento científicos."
+        }
+      ]
+    },
     "footer": {
       "contact": {
         "title": "Contactos",
@@ -667,32 +673,35 @@
         }
       ]
     },
-    "services": [
-      {
-        "title": "Organization of events",
-        "description": "The organization of events has been playing an increasingly significant role today at an economic and social level.\n At AIDFM we have already held more than XXXX events, we stand out mainly for congresses and postgraduate courses, which promote the improvement of medical and surgical techniques. Since then we have increasingly sought to evolve so that we can continue to have a significant impact on the lives of various health professionals and organizations."
-      },
-      {
-        "title": "Administrative Management",
-        "description": "Administrative, human resources and financial management are the major areas that are essential for the proper functioning of any organization.\n At AIDFM we have these areas separated into departments, coordinated by specialized leaders who are prepared to work as a team, because although these topics are different, they are interdependent and all work together to ensure our success and sustainability."
-      },
-      {
-        "title": "Cost Minimization",
-        "description": "At AIDFM, more specifically in our finance department, we try to establish strategies and practices, where we analyse costs in detail, negotiate with partners, plan and establish budgets so that we can establish good economic and social functioning in our organization."
-      },
-      {
-        "title": "Acquisition of Services",
-        "description": "At AIDFM, more specifically in our finance department, we try to establish strategies and practices, where we analyze costs in detail, negotiate with partners, plan and establish budgets so that we can establish the proper economic and social functioning in our organization."
-      },
-      {
-        "title": "Project Reports",
-        "description": "At AIDFM, more specifically in our finance department, we try to establish strategies and practices, where we analyze costs in detail, negotiate with partners, plan and establish budgets so that we can establish good economic and social functioning in our organization."
-      },
-      {
-        "title": "Research Support",
-        "description": "Research support is AIDFM's main focus. We provide support for funding, scholarships, organizations and scientific coordination and dissemination.\n Through research, we aim to increasingly drive the advancement of science and knowledge, resulting in the learning of new techniques, medical treatments and discoveries in the different fields of medicine.\n This support is fundamental for the progress, not only of our organization, but also for scientific development."
-      }
-    ],
+    "services": {
+      "end": ["Contact Our Team", "Here", "and Let Us Help You"],
+      "content": [
+        {
+          "title": "Organization of events",
+          "description": "The organization of events has been playing an increasingly significant role today at an economic and social level.\n At AIDFM we have already held more than XXXX events, we stand out mainly for congresses and postgraduate courses, which promote the improvement of medical and surgical techniques. Since then we have increasingly sought to evolve so that we can continue to have a significant impact on the lives of various health professionals and organizations."
+        },
+        {
+          "title": "Administrative Management",
+          "description": "Administrative, human resources and financial management are the major areas that are essential for the proper functioning of any organization.\n At AIDFM we have these areas separated into departments, coordinated by specialized leaders who are prepared to work as a team, because although these topics are different, they are interdependent and all work together to ensure our success and sustainability."
+        },
+        {
+          "title": "Cost Minimization",
+          "description": "At AIDFM, more specifically in our finance department, we try to establish strategies and practices, where we analyse costs in detail, negotiate with partners, plan and establish budgets so that we can establish good economic and social functioning in our organization."
+        },
+        {
+          "title": "Acquisition of Services",
+          "description": "At AIDFM, more specifically in our finance department, we try to establish strategies and practices, where we analyze costs in detail, negotiate with partners, plan and establish budgets so that we can establish the proper economic and social functioning in our organization."
+        },
+        {
+          "title": "Project Reports",
+          "description": "At AIDFM, more specifically in our finance department, we try to establish strategies and practices, where we analyze costs in detail, negotiate with partners, plan and establish budgets so that we can establish good economic and social functioning in our organization."
+        },
+        {
+          "title": "Research Support",
+          "description": "Research support is AIDFM's main focus. We provide support for funding, scholarships, organizations and scientific coordination and dissemination.\n Through research, we aim to increasingly drive the advancement of science and knowledge, resulting in the learning of new techniques, medical treatments and discoveries in the different fields of medicine.\n This support is fundamental for the progress, not only of our organization, but also for scientific development."
+        }
+      ]
+    },
     "footer": {
       "contact": {
         "title": "Contacts",

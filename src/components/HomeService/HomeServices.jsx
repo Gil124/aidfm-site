@@ -29,6 +29,7 @@ const HomeServices = () => {
       <div className={styles.services__container}>
         {getContent().homepage.services.content.map((service,index) => (
           <HomeServiceContainer
+          link={getContent().navbar.subtitles[1][index].url}
             key={nanoid()}
             title={service}
             image={services[index]}

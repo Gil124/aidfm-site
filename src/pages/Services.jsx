@@ -63,15 +63,15 @@ function Services() {
             key={nanoid()}
             image={service.src}
             desc={service.desc}
-            title={getContent().services[index].title}
-            text={getContent().services[index].description}
+            title={getContent().services.content[index].title}
+            text={getContent().services.content[index].description}
             border={index === services.length - 1 ? "0 0 40px 0" : "0px"}
             id={service.id}
           />
         ))}
       </div>
-      <h1 className="title-link" style={{margin:"20vh 0", fontSize:"32pt"}}>
-        Contacte <a href="">Aqui</a> a Nossa Equipa e Deixe-nos Ajudar
+      <h1 className="title-link">
+        {getContent().services.end[0]} <a href={`mailto: ${getContent().footer.contact.content[0].content}`} >{getContent().services.end[1]}</a> {getContent().services.end[2]}
       </h1>
     </>
   );

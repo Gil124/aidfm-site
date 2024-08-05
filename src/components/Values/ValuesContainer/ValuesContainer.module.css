@@ -61,3 +61,22 @@
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
 }
+
+@media screen and (max-width: 1000px) {
+  .container {
+    flex: unset;
+    max-width: unset;
+    width: 16rem;
+    height: 10rem;
+  }
+
+  .container:last-child {
+    margin-left: 0;
+  }
+
+  .logo {
+    height: 40px;
+    width: 40px;
+  }
+  
+}

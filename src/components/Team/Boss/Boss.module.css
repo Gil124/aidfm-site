@@ -43,7 +43,7 @@
 .img:hover {
   scale: 105%;
   box-shadow: 0px 0px 20px 2px #8888887c;
-  cursor: pointer;
+ /* cursor: pointer;*/
 }
 
 /*popup*/
