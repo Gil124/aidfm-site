@@ -10,7 +10,11 @@ import { Fade } from "react-awesome-reveal";
 import { IoClose, IoChevronBackOutline  } from "react-icons/io5";
 import content from "../../text.json";
 
-let lang = "PT";
+if (localStorage.getItem("lang") === null) {
+  localStorage.setItem("lang", "PT");
+}
+
+let lang = localStorage.getItem("lang");
 
 export const getContent = () => {
   if (lang === "EN") {
@@ -31,16 +35,18 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const [links, setLinks] = useState(0);
   const [hovered, setHovered] = useState(false);
-  const [navLang, setNavLang] = useState("PT");
+  const [navLang, setNavLang] = useState(lang);
   const [subMenu, setSubMenu] = useState(false);
 
   const toggleLang = () => {
     if (lang === "PT") {
       setNavLang("EN");
       lang = "EN";
+      localStorage.setItem("lang", "EN");
     } else {
       setNavLang("PT");
       lang = "PT";
+      localStorage.setItem("lang", "PT");
     }
   };
 
