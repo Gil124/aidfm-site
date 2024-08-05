@@ -43,7 +43,7 @@ function Team() {
         <p className={styles.headerText}>{getContent().org.description}</p>
       </div>
       {teams.map((team, index) => (
-        <div key={nanoid()} id={team.id}>
+        <div key={nanoid()} id={team.id} style={styles.mobile_centered}>
           <hr className={styles.divider} />
           <h3 className={styles.title}>{getContent().org.content[index].title}</h3>
           <div className={styles.team}>

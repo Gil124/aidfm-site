@@ -55,3 +55,47 @@
   /*cursor: pointer;*/
 }
 
+@media screen and (max-width: 1000px) {
+  .container {
+    flex: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    position: relative;
+    background-color: transparent;
+  }
+
+  .img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-size: cover !important;
+    background-color: transparent;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+
+  .name {
+    width: 100%;
+    color: #2b1fa9;
+    font-size: 14pt;
+    font-weight: 600;
+    line-height: 15pt;
+    text-align: start;
+    margin-top: 10px;
+  }
+
+  .position {
+    width: 100%;
+    text-align: start;
+    color: #514e5b;
+    font-size: 12pt;
+    font-weight: 500;
+    line-height: 13pt;
+    margin-top: 2px;
+  }
+  
+}
+
