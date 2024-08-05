@@ -7,7 +7,7 @@ import { nanoid } from "nanoid";
 import fullLogoImg from "../../assets/logo-nav.svg";
 import mobileLogoImg from "../../assets/logo-nav-mobile.svg";
 import { Fade } from "react-awesome-reveal";
-import { IoClose } from "react-icons/io5";
+import { IoClose, IoChevronBackOutline  } from "react-icons/io5";
 import content from "../../text.json";
 
 let lang = "PT";
@@ -32,6 +32,7 @@ const Navbar = () => {
   const [links, setLinks] = useState(0);
   const [hovered, setHovered] = useState(false);
   const [navLang, setNavLang] = useState("PT");
+  const [subMenu, setSubMenu] = useState(false);
 
   const toggleLang = () => {
     if (lang === "PT") {
@@ -45,10 +46,15 @@ const Navbar = () => {
 
   const handleLinks = (link) => {
     setMenu(true);
+    setSubMenu(true);
     setLinks(link);
     setTimeout(() => {
       setHovered(true);
     }, 300);
+  };
+
+  const handleMenuBack = () => {
+    setSubMenu(false);
   };
 
   const handleMouseExit = () => {
@@ -57,17 +63,16 @@ const Navbar = () => {
   };
 
   const handleMenuOpen = () => {
-    setMenuOpen(true);
     document.getElementsByTagName("body")[0].style =
       "height: 100%; overflow: hidden;";
-    console.log("pressed");
+    setMenuOpen(true);
   };
 
   const handleMenuClose = () => {
-    setMenuOpen(false);
     document.getElementsByTagName("body")[0].style =
       "height: unset; overflow: unset;";
-    console.log("pressed");
+    setMenuOpen(false);
+    setSubMenu(false);
   };
 
   return (
@@ -149,11 +154,40 @@ const Navbar = () => {
         className={styles.overlay}
         style={menuOpen ? { transform: "translateY(0)" } : {}}
       >
-        <div className={styles.menu_exitButton_container}>
+        <div className={styles.menu_exitButton_container} style={subMenu ? {justifyContent: "space-between"} : {justifyContent: "end"}}>
+          {subMenu ? <IoChevronBackOutline 
+            className={styles.menu_exitButton}
+            onClick={handleMenuBack}
+          /> : null}
           <IoClose
             className={styles.menu_exitButton}
             onClick={handleMenuClose}
           />
+        </div>
+        <div className={styles.mobile_menu}>
+          <div className={styles.mobile_title} style={!subMenu ? {display: "flex"} : {display: "none"}}>
+            {getContent().navbar.titles.map((link, index) => (
+              <Link
+                key={nanoid()}
+                className={styles.mobile_navbarLink}
+                onClick={() => handleLinks(index)}
+              >
+                {link.title}
+              </Link>
+            ))}
+          </div>
+          <div className={styles.mobile_title} style={subMenu ? {display: "flex"} : {display: "none"}}>
+            {getContent().navbar.subtitles[links].map((link, index) => (
+              <Link
+                key={nanoid()}
+                className={styles.mobile_navbarLink}
+                to={link.url}
+                reloadDocument
+              >
+                {link.title}
+              </Link>
+            ))}
+          </div>
         </div>
         <div className={styles.menu_link_list}></div>
       </div>
