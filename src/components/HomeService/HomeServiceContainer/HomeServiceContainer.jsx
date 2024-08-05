@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import styles from "./HomeServiceContainer.module.css";
 import { useNavigate } from "react-router-dom";
+import { getContent } from "../../Navbar/Navbar";
 
 function HomeServiceContainer({ title, image, id }) {
   const containerStyle = {
@@ -24,7 +25,7 @@ function HomeServiceContainer({ title, image, id }) {
         />
         <h3>{title}</h3>
         <button className={styles.button}>
-          Mais
+          {getContent().homepage.services.button}
           <IoIosArrowForward className={styles.arrow} />
         </button>
       </div>

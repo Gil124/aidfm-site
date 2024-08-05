@@ -3,16 +3,13 @@ import { Link } from "react-router-dom";
 import styles from "./MiniMenu.module.css";
 import { nanoid } from "nanoid";
 import { IoChevronDownOutline } from "react-icons/io5";
+import { getContent } from "../Navbar/Navbar";
 
 const menu = [
   {
-    title: "Quem Somos",
-    ref: "/about",
     sub: [],
   },
   {
-    title: "Orgãos Sociais",
-    ref: "/about/team",
     sub: [
       { title: "Direção", ref: "/about/team#management" },
       { title: "Assembleia Geral", ref: "/about/team#assembly" },
@@ -20,8 +17,6 @@ const menu = [
     ],
   },
   {
-    title: "Centros de Investigação",
-    ref: "/about/ci",
     sub: [
       { title: "CCUL", ref: "/about/ci#CCUL" },
       { title: "ISAMB", ref: "/about/ci#ISAMB" },
@@ -53,11 +48,11 @@ function MiniMenu({ page }) {
   return (
     <>
       <div className={styles.container}>
-        <h2 className={styles.title}>Sobre Nós</h2>
-        {menu.map((title, index) => (
+        <h2 className={styles.title}>{getContent().navbar.titles[0].title}</h2>
+        {getContent().navbar.subtitles[0].map((title, index) => (
           <div key={nanoid()}>
             <Link
-              to={title.ref}
+              to={title.url}
               className={styles.mains}
               onClick={() => handleMenuClick(index)}
             >
@@ -67,7 +62,7 @@ function MiniMenu({ page }) {
               <div>
                 {title.sub.map((subtitle) => (
                   <div key={nanoid()}>
-                    <a href={subtitle.ref} className={styles.subs}>
+                    <a href={subtitle.url} className={styles.subs}>
                       {subtitle.title}
                     </a>
                   </div>
@@ -86,10 +81,10 @@ function MiniMenu({ page }) {
           className={styles.dropdownContent}
           style={dropped ? { display: "block" } : { display: "none" }}
         >
-          {menu.map((title, index) => (
+          {getContent().navbar.subtitles[0].map((title, index) => (
             <div key={nanoid()}>
               <Link
-                to={title.ref}
+                to={title.url}
                 className={styles.dropdownOption}
                 onClick={() => handleMenuClick(index)}
               >
@@ -99,7 +94,7 @@ function MiniMenu({ page }) {
                 <div>
                   {title.sub.map((subtitle) => (
                     <div key={nanoid()}>
-                      <a href={subtitle.ref} className={styles.dropdownOption}>
+                      <a href={subtitle.url} className={styles.dropdownOption}>
                         {subtitle.title}
                       </a>
                     </div>

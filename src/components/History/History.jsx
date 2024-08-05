@@ -7,17 +7,7 @@ import history3 from "../../assets/history3.jpeg";
 import history4 from "../../assets/history4.jpeg";
 import history5 from "../../assets/history5.jpeg";
 import { Fade } from "react-awesome-reveal";
-
-let text1 =
-  "A AIDFM foi fundada pelo senhor João dia 10 de outubro de 1993 com aprovação do Presidente da Républica";
-let text2 =
-  "Após a criação da Comissão Instaladora em dezembro de 1994, a AIDFM começou suas atividades no final do mesmo ano.";
-let text3 =
-  "Em janeiro de 1995, a primeira Direção foi eleita e trabalhou para garantir uma organização eficaz da associação.";
-let text4 =
-  "Posteriormente, a AIDFM foi reconhecida como pessoa coletiva de utilidade pública em março de 2000, pelo Primeiro-ministro António Guterres.";
-let text5 =
-  "Em abril de 2009, foi também reconhecida com o Estatuto de Mecenato Científico pelo Ministro da Ciência e pelo Secretário de Estado dos Assuntos Fiscais.";
+import { getContent } from "../Navbar/Navbar";
 
 function History() {
   const [currentText, setCurrentText] = useState("");
@@ -50,27 +40,27 @@ function History() {
       // Update currentText based on the new section
       switch (newSection) {
         case 1:
-          setCurrentText(text1);
+          setCurrentText(getContent().about.history.content[0].description);
           setActiveYear(1);
           break;
         case 2:
-          setCurrentText(text2);
+          setCurrentText(getContent().about.history.content[1].description);
           setActiveYear(2);
           break;
         case 3:
-          setCurrentText(text3);
+          setCurrentText(getContent().about.history.content[2].description);
           setActiveYear(3);
           break;
         case 4:
-          setCurrentText(text4);
+          setCurrentText(getContent().about.history.content[3].description);
           setActiveYear(4);
           break;
         case 5:
-          setCurrentText(text5);
+          setCurrentText(getContent().about.history.content[4].description);
           setActiveYear(5);
           break;
         default:
-          setCurrentText(text1);
+          setCurrentText(getContent().about.history.content[5].description);
           setActiveYear(1);
           break;
       }
@@ -89,7 +79,11 @@ function History() {
     <>
       <div id="history" className={styles.history}>
         <h1 className="title">
-          A Nossa <span>História</span>
+          {getContent().about.history.title.split(" H").slice(0, 1).join(" ")}
+          <span>{` H${getContent()
+            .about.history.title.split(" H")
+            .slice(1)
+            .join("H")}`}</span>
         </h1>
         <div className={styles.container} onScroll={handleScroll}>
           <div className={styles.menu}>
@@ -101,35 +95,35 @@ function History() {
                       activeYear === 1 ? styles.active : styles.hidden
                     }`}
                   >
-                    <a href="#img1">1993</a>
+                    <a href="#img1">{getContent().about.history.content[0].date}</a>
                   </label>
                   <label
                     className={`${styles.year} ${
                       activeYear === 2 ? styles.active : styles.hidden
                     }`}
                   >
-                    <a href="#img2">1994</a>
+                    <a href="#img2">{getContent().about.history.content[1].date}</a>
                   </label>
                   <label
                     className={`${styles.year} ${
                       activeYear === 3 ? styles.active : styles.hidden
                     }`}
                   >
-                    <a href="#img3">1995</a>
+                    <a href="#img3">{getContent().about.history.content[2].date}</a>
                   </label>
                   <label
                     className={`${styles.year} ${
                       activeYear === 4 ? styles.active : styles.hidden
                     }`}
                   >
-                    <a href="#img4">2000</a>
+                    <a href="#img4">{getContent().about.history.content[3].date}</a>
                   </label>
                   <label
                     className={`${styles.year} ${
                       activeYear === 5 ? styles.active : styles.hidden
                     }`}
                   >
-                    <a href="#img5">2009</a>
+                    <a href="#img5">{getContent().about.history.content[4].date}</a>
                   </label>
                 </div>
                 <p className={styles.transition}>{currentText}</p>

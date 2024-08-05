@@ -3,6 +3,7 @@ import Button from "../Button/Button";
 import homeSymbol from "../../assets/home-symbol.png";
 import headerBackground from "../../assets/landing.page.jpeg";
 import { Fade } from "react-awesome-reveal";
+import { getContent } from "../Navbar/Navbar";
 
 function Header() {
   const handleDiscoverButton = () => {
@@ -21,7 +22,7 @@ function Header() {
       <Fade direction="left">
         <div>
           <div className={styles.title_box}>
-            <h1 className={styles.header__title}>Investigação</h1>
+            <h1 className={styles.header__title}>{getContent().homepage.hero.title}</h1>
             <img
               className={styles.header__decor}
               src={homeSymbol}
@@ -29,13 +30,13 @@ function Header() {
             ></img>
           </div>
           <div className={styles.title_box}>
-            <h1 className={styles.header__title}>Desenvolvimento</h1>
+            <h1 className={styles.header__title}>{getContent().homepage.hero.subtitle}</h1>
           </div>
         </div>
       </Fade>
       <Fade direction="left">
         <Button
-          text={"Descobre Mais"}
+          text={getContent().homepage.hero.button}
           type="btn--home"
           onClick={handleDiscoverButton}
         />

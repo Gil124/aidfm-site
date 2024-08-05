@@ -9,13 +9,11 @@ function ServicesContainer({ id, image, desc, title, text, border }) {
         src={image}
         alt={desc}
         className={styles.img}
-        style={{ borderRadius: border, marginTop: "100%" }}
+        style={{ borderRadius: border}}
       />
       <div className={styles.textContainer}>
         <h1 className={styles.title}>{title}</h1>
-        {text.map((paragraph) => (
-        <p className={styles.text} key={nanoid()}>{paragraph}</p>
-      ))}
+        <p className={styles.text} key={nanoid()}>{text}</p>
       </div>
     </div>
   );

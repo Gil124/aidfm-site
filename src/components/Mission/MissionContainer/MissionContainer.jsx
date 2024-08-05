@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 function MissionContainer({ title, text }) {
   return (
     <div className={styles.container}>
-      {title === "A Nossa Missão" ? (
+      {title === "A Nossa Missão" || title === "Mission" ? (
         <>
           <Fade fraction={0.2} direction="up" triggerOnce>
             <IoRocketOutline className={styles.logo} />

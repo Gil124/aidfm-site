@@ -35,16 +35,20 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const [links, setLinks] = useState(0);
   const [hovered, setHovered] = useState(false);
+  const [navLang, setNavLang] = useState(lang);
   const [subMenu, setSubMenu] = useState(false);
 
   const toggleLang = () => {
     if (lang === "PT") {
+      setNavLang("EN");
       lang = "EN";
       localStorage.setItem("lang", "EN");
     } else {
+      setNavLang("PT");
       lang = "PT";
       localStorage.setItem("lang", "PT");
     }
+    window.location.reload();
   };
 
   const handleLinks = (link) => {

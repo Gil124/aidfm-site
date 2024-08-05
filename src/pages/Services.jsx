@@ -7,6 +7,7 @@ import service3 from "../assets/service3.jpeg"
 import service4 from "../assets/service4.jpeg"
 import service5 from "../assets/service5.jpeg"
 import service6 from "../assets/service6.jpeg"
+import { getContent } from "../components/Navbar/Navbar";
 
 const services = [
   {
@@ -62,8 +63,8 @@ function Services() {
             key={nanoid()}
             image={service.src}
             desc={service.desc}
-            title={service.title}
-            text={service.text}
+            title={getContent().services[index].title}
+            text={getContent().services[index].description}
             border={index === services.length - 1 ? "0 0 40px 0" : "0px"}
             id={service.id}
           />

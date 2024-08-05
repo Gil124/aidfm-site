@@ -9,53 +9,29 @@ import serviceCosts from "../../assets/service-costs.jpeg";
 import serviceResearch from "../../assets/service-investigation.jpeg";
 import { nanoid } from "nanoid";
 import { Fade } from "react-awesome-reveal";
+import { getContent } from "../Navbar/Navbar";
 
 const services = [
-  {
-    id: "/services#events",
-    title: "Organização de Eventos",
-    img: serviceEvents,
-  },
-  {
-    id: "/services#admin",
-    title: "Gestão Administrativa",
-    img: serviceAdmin,
-  },
-  {
-    id: "/services#services",
-    title: "Aquisição de Serviços",
-    img: serviceServices,
-  },
-  {
-    id: "/services#project",
-    title: "Relatórios de Projeto",
-    img: serviceProject,
-  },
-  {
-    id: "/services#costs",
-    title: "Minimização de Custos",
-    img: serviceCosts,
-  },
-  {
-    id: "/services#research",
-    title: "Apoio à Investigação",
-    img: serviceResearch,
-  },
+  serviceEvents,
+  serviceAdmin,
+  serviceServices,
+  serviceProject,
+  serviceCosts,
+  serviceResearch,
 ];
 
 const HomeServices = () => {
   return (
     <div className={styles.services}>
       <Fade direction="down" triggerOnce>
-        <h1 className="title">Os Nossos Serviços</h1>
+        <h1 className="title">{getContent().homepage.services.title}</h1>
       </Fade>
       <div className={styles.services__container}>
-        {services.map((service) => (
+        {getContent().homepage.services.content.map((service,index) => (
           <HomeServiceContainer
             key={nanoid()}
-            id={service.id}
-            title={service.title}
-            image={service.img}
+            title={service}
+            image={services[index]}
             className={styles.container}
           />
         ))}

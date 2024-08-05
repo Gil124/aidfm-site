@@ -14,97 +14,23 @@ import ruiPortugal from "../../assets/ruiPortugal.jpg";
 import alexandreRibeiro from "../../assets/alexandreRibeiro.png";
 import mariaDiogenes from "../../assets/mariaDiogenes.jpg";
 import mamedeCarvalho from "../../assets/mamedeCarvalho.jpg";
+import { getContent } from "../Navbar/Navbar";
 
 const teams = [
   {
-    title: "Direção",
     id: "management",
-    boss: [
-      {
-        src: joseVelosa,
-        name: "Prof. Doutor José Fernando de Freitas Velosa",
-        position: "Presidente",
-        text: "Na empresa líder em inovação sediada em Lisboa, o chefe exemplar, Sr. António Silva, é uma fonte inesgotável de inspiração para todos os funcionários. Com uma ética de trabalho incansável e uma visão clara para o futuro da empresa, ele lidera com paixão e determinação. Sob sua liderança, a equipe floresce, impulsionada pelo seu compromisso com a excelência e pelo seu apoio incansável às ideias inovadoras. O Sr. Silva não apenas valoriza o profissionalismo, mas também cultiva um ambiente de trabalho colaborativo, onde a criatividade é incentivada e as contribuições de cada indivíduo são reconhecidas. Sua abordagem calorosa e orientada para as pessoas cria uma atmosfera positiva, transformando o escritório em um local onde todos se sentem valorizados e motivados para alcançar o sucesso.",
-      },
-      {
-        src: antonioCarneiro,
-        name: "Prof. Doutor António CândidoVaz Carneiro",
-        position: "Vice-Presidente",
-        text: "Professor doutor médico de família contribui na vida",
-      },
-    ],
-    under: [
-      {
-        src: ruiTato,
-        name: "Prof. Doutor Rui Tato Marinho",
-        position: "Secretário",
-        text: "",
-      },
-      {
-        src: isabelPavao,
-        name: "Profª. Doutora Maria Isabel Pavão Petiz",
-        position: "Vogal",
-        text: "",
-      },
-      {
-        src: eduardoMartins,
-        name: "Prof. Doutor António Eduardo Pais Falcão Barbosa Martins",
-        position: "Vogal",
-        text: "",
-      },
-    ],
+    boss: [joseVelosa, antonioCarneiro],
+    under: [ruiTato, isabelPavao, eduardoMartins],
   },
   {
-    title: "Assembleia Geral",
     id: "assembly",
-    boss: [
-      {
-        src: faustoPinto,
-        name: "Prof. Doutor Fausto José da Conceição Alexandre Pinto",
-        position: "Presidente",
-        text: "",
-      },
-      {
-        src: fernandoGodinho,
-        name: "Prof. Doutor Fernando Manuel Godinho Rodrigues",
-        position: "Vice-Presidente",
-        text: "",
-      },
-    ],
-    under: [
-      {
-        src: ruiPortugal,
-        name: "Prof. Doutor Rui Gentil de Portugal e Vasconcelos Fernandes",
-        position: "Secretário",
-        text: "",
-      },
-    ],
+    boss: [faustoPinto, fernandoGodinho],
+    under: [ruiPortugal],
   },
   {
-    title: "Conselho Fiscal",
     id: "counsil",
-    boss: [
-      {
-        src: alexandreRibeiro,
-        name: "Prof. Doutor Joaquim Alexandre Ribeiro",
-        position: "Presidente",
-        text: "",
-      },
-    ],
-    under: [
-      {
-        src: mariaDiogenes,
-        name: "Profª. Doutora Maria José Diógenes",
-        position: "Vogal",
-        text: "",
-      },
-      {
-        src: mamedeCarvalho,
-        name: "Prof. Doutor Mamede Alves de Carvalho",
-        position: "Vogal",
-        text: "",
-      },
-    ],
+    boss: [alexandreRibeiro],
+    under: [mariaDiogenes, mamedeCarvalho],
   },
 ];
 
@@ -113,34 +39,36 @@ function Team() {
     <div className={styles.page}>
       <div className={styles.header}>
         <hr className={styles.divider} />
-        <h3 className={styles.title}>Orgãos Sociais</h3>
-        <p className={styles.headerText}>
-          As nossa equipas são formadas por membros de elite de todas as àreas
-          da medicina, dividos em: Assembleia Geral, Conselho Fiscal e Direção.
-        </p>
+        <h3 className={styles.title}>{getContent().org.title}</h3>
+        <p className={styles.headerText}>{getContent().org.description}</p>
       </div>
-      {teams.map((team) => (
+      {teams.map((team, index) => (
         <div key={nanoid()} id={team.id}>
           <hr className={styles.divider} />
-          <h3 className={styles.title}>{team.title}</h3>
+          <h3 className={styles.title}>{getContent().org.content[index].title}</h3>
           <div className={styles.team}>
-            {team.boss.map((b) => (
+            {team.boss.map((b, indexB) => (
               <Boss
                 key={nanoid()}
                 profile={b}
+                name={getContent().org.content[index].content[indexB].name}
+                role={getContent().org.content[index].content[indexB].role}
+                description={
+                  getContent().org.content[index].content[indexB].description
+                }
               />
             ))}
           </div>
           <div className={styles.team}>
-          {team.under.map((u) => (
+            {team.under.map((u, indexU) => (
               <Under
                 key={nanoid()}
-                image={u.src}
-                name={u.name}
-                position={u.position}
-                text={u.text}
+                image={u}
+                name={getContent().org.content[index].content[team.boss.length + indexU].name}
+                position={getContent().org.content[index].content[team.boss.length + indexU].role}
+                text={getContent().org.content[index].content[team.boss.length + indexU].description}
               />
-              ))}
+            ))}
           </div>
         </div>
       ))}

@@ -12,55 +12,7 @@ import {
   IoLogoLinkedin,
 } from "react-icons/io5";
 import logoImg from "../../assets/logo-nav.svg";
-
-
-
-const about = {
-  url: "/about",
-  title: "Sobre Nós",
-  subtitles: [
-    { url: "", title: "Quem Somos" },
-    { url: "/team", title: "Orgãos Sociais" },
-    { url: "/ci", title: "Centros de Investigação" },
-  ],
-};
-
-const services = {
-  url: "/services",
-  title: "Serviços",
-  subtitles: [
-    { id: "/services#events", title: "Organização de Eventos" },
-    { id: "/services#admin", title: "Gestão Administrativa" },
-    { id: "/services#services", title: "Aquisição de Serviços" },
-    { id: "/services#project", title: "Relatórios de Projeto" },
-    { id: "/services#costs", title: "Minimização de Custos" },
-    { id: "/services#research", title: "Apoio à investigação" },
-  ],
-};
-
-const projects = {
-  url: "/projects",
-  title: "Projetos",
-  subtitles: [
-    { id: "/projects#numbers", title: "Os Nossos Números" },
-    { id: "/projects#passProj", title: "Projetos Passados" },
-    { id: "/projects#onProj", title: "Projetos em Andamento" },
-  ],
-};
-
-const join = {
-  url: "/join",
-  title: "Junte-se a Nós",
-  subtitles: [
-    { id: "/join#whyUs", title: "Porquê Nós?" },
-    { id: "/join#benefits", title: "Benefícios" },
-    { id: "/join#candidate", title: "Candidate-se" },
-  ],
-};
-
-const contacts = {
-  title: "Contactos",
-};
+import { getContent } from "../Navbar/Navbar";
 
 function Footer() {
   const [currentTitle, setCurrentTitle] = useState(0);
@@ -93,96 +45,41 @@ function Footer() {
         </Link>
       </div>
       <div className={styles.container}>
-        <div className={styles.bigContainer}>
-          <h2 className={styles.title} onClick={() => handleClick(1)}>
-            {about.title}
+        {getContent().navbar.titles.map((link, index) => (
+          <div className={styles.bigContainer} key={nanoid()}>
+            <h2 id={link.url} className={styles.title} onClick={() => handleClick(index+1)}>
+            {link.title}
           </h2>
-          {about.subtitles
-            ? about.subtitles.map((subtitle) => (
-                <div
-                  className={styles.mediumContainer}
-                  key={nanoid()}
-                  style={handleFooterStyle(1)}
-                >
-                  <Link
-                    to={about.url + subtitle.url}
-                    className={styles.subTitle}
-                  >
-                    {subtitle.title}
-                  </Link>
-                </div>
-              ))
-            : null}
+          {getContent().navbar.subtitles[index].map((section) => (
+             <div
+             id={section.url}
+             className={styles.mediumContainer}
+             key={nanoid()}
+             style={handleFooterStyle(index+1)}
+           >
+             <a href={`${section.url}`} className={styles.subTitle}>
+               {section.title}
+             </a>
+           </div>
+         ))
+        }
         </div>
+        ))}
         <div className={styles.bigContainer}>
-          <h2 className={styles.title} onClick={() => handleClick(2)}>
-            {services.title}
-          </h2>
-          {services.subtitles
-            ? services.subtitles.map((section) => (
-                <div
-                  className={styles.mediumContainer}
-                  key={nanoid()}
-                  style={handleFooterStyle(2)}
-                >
-                  <a href={`${section.id}`} className={styles.subTitle}>
-                    {section.title}
-                  </a>
-                </div>
-              ))
-            : null}
-        </div>
-        <div className={styles.bigContainer}>
-          <h2 className={styles.title} onClick={() => handleClick(3)}>
-            {projects.title}
-          </h2>
-          {projects.subtitles
-            ? projects.subtitles.map((section) => (
-                <div
-                  className={styles.mediumContainer}
-                  key={nanoid()}
-                  style={handleFooterStyle(3)}
-                >
-                  <a href={`${section.id}`} className={styles.subTitle}>
-                    {section.title}
-                  </a>
-                </div>
-              ))
-            : null}
-        </div>
-        <div className={styles.bigContainer}>
-          <h2 className={styles.title} onClick={() => handleClick(4)}>
-            {join.title}
-          </h2>
-          {join.subtitles
-            ? join.subtitles.map((section) => (
-                <div
-                  className={styles.mediumContainer}
-                  key={nanoid()}
-                  style={handleFooterStyle(4)}
-                >
-                  <a href={`${section.id}`} className={styles.subTitle}>
-                    {section.title}
-                  </a>
-                </div>
-              ))
-            : null}
-        </div>
-        <div className={styles.bigContainer}>
-          <h2 className={styles.titleContacts}>{contacts.title}</h2>
+          <h2 className={styles.titleContacts}>{getContent().footer.contact.title}</h2>
           <div className={styles.contactContainer}>
             <IoMailOutline className={styles.contactLogo} />
-            <a href="mailto: aidfm@medicina.ulisboa.pt">
-              aidfm@medicina.ulisboa.pt
+            <a href={`mailto: ${getContent().footer.contact.content[0].content}`}>
+            {getContent().footer.contact.content[0].content}
             </a>
           </div>
           <div className={styles.contactContainer}>
             <IoCallOutline className={styles.contactLogo} />
-            <a href="tel:+351 93 939 393">+351 93 939 393</a>
+            <a href={`tel:${getContent().footer.contact.content[1].content}`}>{getContent().footer.contact.content[1].content}</a>
           </div>
           <div className={styles.contactContainer}>
             <IoHomeOutline className={styles.contactLogo} />
-            <a href="tel:+351 21 232 323">+351 21 232 323</a>
+            <a href={`tel:${getContent().footer.contact.content[2].content}`}>{getContent().footer.contact.content[2].content}</a>
           </div>
         </div>
       </div>
@@ -190,8 +87,8 @@ function Footer() {
         <div className={styles.locationContainer}>
           <IoLocationOutline className={styles.locationLogo} />
           <p className={styles.info}>
-            AIDFM Av. Prof. Egas Moniz, Piso 01 <br />
-            1649-028 Lisboa <br /> Portugal
+            {getContent().footer.Address.street} <br />
+            {getContent().footer.Address.postalCode} <br /> {getContent().footer.Address.country}
           </p>
         </div>
         <a href="">

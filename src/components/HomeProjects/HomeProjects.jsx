@@ -14,6 +14,9 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import { Keyboard, Autoplay, Pagination, Navigation } from "swiper/modules";
+import { getContent } from "../Navbar/Navbar";
+
+let imgs = [project1, project2, project3, project4, project2];
 
 const projects = [
   {
@@ -41,7 +44,7 @@ const projects = [
 function HomeProjects() {
   return (
     <>
-      <h1 className="title">Os Nossos Projetos</h1>
+      <h1 className="title">{getContent().homepage.projects.title}</h1>
       <Fade
         className={styles.container}
         direction="up"
@@ -67,54 +70,23 @@ function HomeProjects() {
           modules={[Keyboard, Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
-          <SwiperSlide style={{ backgroundImage: `url(${project1})` }}>
-            {({ isActive }) =>
-              isActive ? (
-                <div className={styles.textContainer}>
-                  <h3 className={styles.title}>{projects[0].title}</h3>
-                  <p className={styles.text}>{projects[0].text}</p>
-                </div>
-              ) : (
-                <></>
-              )
-            }
-          </SwiperSlide>
-          <SwiperSlide style={{ backgroundImage: `url(${project2})` }}>
-            {({ isActive }) =>
-              isActive ? (
-                <div className={styles.textContainer}>
-                  <h3 className={styles.title}>{projects[1].title}</h3>
-                  <p className={styles.text}>{projects[1].text}</p>
-                </div>
-              ) : (
-                <></>
-              )
-            }
-          </SwiperSlide>
-          <SwiperSlide style={{ backgroundImage: `url(${project3})` }}>
-            {({ isActive }) =>
-              isActive ? (
-                <div className={styles.textContainer}>
-                  <h3 className={styles.title}>{projects[2].title}</h3>
-                  <p className={styles.text}>{projects[2].text}</p>
-                </div>
-              ) : (
-                <></>
-              )
-            }
-          </SwiperSlide>
-          <SwiperSlide style={{ backgroundImage: `url(${project4})` }}>
-            {({ isActive }) =>
-              isActive ? (
-                <div className={styles.textContainer}>
-                  <h3 className={styles.title}>{projects[3].title}</h3>
-                  <p className={styles.text}>{projects[3].text}</p>
-                </div>
-              ) : (
-                <></>
-              )
-            }
-          </SwiperSlide>
+          {getContent().homepage.projects.content.map((project, index) => (
+            <SwiperSlide
+              key={nanoid()}
+              style={{ backgroundImage: `url(${imgs[index]})` }}>
+              {({ isActive }) =>
+                isActive ? (
+                  <div className={styles.textContainer}>
+                    <h3 className={styles.title}>{project.title}</h3>
+                    <p className={styles.text}>{project.content}</p>
+                  </div>
+                ) : (
+                  <></>
+                )
+              }
+              </SwiperSlide>
+            
+          ))}
         </Swiper>
       </Fade>
     </>

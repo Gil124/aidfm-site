@@ -9,10 +9,36 @@
       ],
       "subtitles": [
         [
-          { "title": "Quem Somos", "url": "/about" },
-          { "title": "Orgãos Sociais", "url": "/about/team" },
-          { "title": "Centros de Investigação", "url": "/about/ci" },
-          { "title": "Informação Institucional", "url": "/about/docs" }
+          {
+            "title": "Quem Somos",
+            "url": "/about",
+            "sub": []
+          },
+          {
+            "title": "Orgãos Sociais",
+            "url": "/about/team",
+            "sub": [
+              { "title": "Direção", "url": "/about/team#management" },
+              { "title": "Assembleia Geral", "url": "/about/team#assembly" },
+              { "title": "Conselho Fiscal", "url": "/about/team#counsil" }
+            ]
+          },
+          {
+            "title": "Centros de Investigação",
+            "url": "/about/ci",
+            "sub": [
+              { "title": "CCUL", "url": "/about/ci#CCUL" },
+              { "title": "ISAMB", "url": "/about/ci#ISAMB" },
+              { "title": "CEMBE", "url": "/about/ci#CEMBE" },
+              { "title": "Centro de Bioética", "url": "/about/ci#bioethic" },
+              { "title": "Centro de Estudos Egas Moniz", "url": "/about/ci#egas" }
+            ]
+          },
+          {
+            "title": "Informação Institucional",
+            "url": "/about/docs",
+            "sub": []
+          }
         ],
         [
           { "title": "Organização de eventos", "url": "/services#events" },
@@ -57,28 +83,31 @@
         "title": "Os Nossos Números",
         "content": ["Colaboradores", "Projetos", "Parcerias", "Investigadores"]
       },
-      "projects": [
-        {
-          "title": "Projeto 1",
-          "content": "Descrição do projeto 1"
-        },
-        {
-          "title": "Projeto 2",
-          "content": "Descrição do projeto 2"
-        },
-        {
-          "title": "Projeto 3",
-          "content": "Descrição do projeto 3"
-        },
-        {
-          "title": "Projeto 4",
-          "content": "Descrição do projeto 4"
-        },
-        {
-          "title": "Projeto 5",
-          "content": "Descrição do projeto 5"
-        }
-      ]
+      "projects": {
+        "title": "Os Nossos Projetos",
+        "content": [
+          {
+            "title": "Projeto 1",
+            "content": "Descrição do projeto 1"
+          },
+          {
+            "title": "Projeto 2",
+            "content": "Descrição do projeto 2"
+          },
+          {
+            "title": "Projeto 3",
+            "content": "Descrição do projeto 3"
+          },
+          {
+            "title": "Projeto 4",
+            "content": "Descrição do projeto 4"
+          },
+          {
+            "title": "Projeto 5",
+            "content": "Descrição do projeto 5"
+          }
+        ]
+      }
     },
     "about": {
       "history": {
@@ -110,7 +139,7 @@
         "title": "Missão, Visão e Valores",
         "content": {
           "mission": {
-            "title": "Missão",
+            "title": "A Nossa Missão",
             "content": "A nossa missão é promover e desenvolver atividades de ensino, formação e investigação científica, bem como criar infraestruturas médicas e tecnológicas."
           },
           "vision": {
@@ -242,17 +271,17 @@
     "research": {
       "content": [
         {
-          "sila": "CCUL",
+          "sigla": "CCUL",
           "title": "Centro Cardiovascular da Universidade de Lisboa",
           "description": "Um instituto de investigação biomédica empenhado em melhorar a saúde e os cuidados de saúde em todo o mundo, seguindo o padrão de excelência em investigação, cuidados clínicos e educação médica."
         },
         {
-          "sila": "ISAMB",
+          "sigla": "ISAMB",
           "title": "Instituto de Saúde Ambietal",
           "description": "É um centro de investigação inteiramente dedicado à saúde ambiental."
         },
         {
-          "sila": "CEMBE",
+          "sigla": "CEMBE",
           "title": "Centro de Estudos de Medicina Baseada na Evidência",
           "description": "Uma unidade estrutural da Faculdade de Medicina da Universidade de Lisboa, criado com o objetivo de difundir os princípios da medicina baseada na evidência."
         },
@@ -308,7 +337,22 @@
         "title": "Apoio à Investigação",
         "description": "O apoio à investigação é o principal foco da AIDFM. Fornecemos apoio a financiamentos, à atribuição de bolsas de estudo, a organizações e ainda à coordenação e divulgação científica.\n Através da investigação, pretendemos cada vez mais impulsionar o avanço da ciência e do conhecimento, resultando na aprendizagem de novas técnicas, tratamentos médicos e descobertas nos diferentes campos da medicina.\n Este apoio é fundamental para o progresso, não só da nossa organização, mas também para o desenvolvimento científicos."
       }
-    ]
+    ],
+    "footer": {
+      "contact": {
+        "title": "Contactos",
+        "content": [
+          { "title": "Email", "content": "+351 21 123 45 67" },
+          { "title": "Telefone", "content": "+351 92 123 45 67" },
+          { "title": "Telemóvel", "content": "+351 21 123 45 67" }
+        ]
+      },
+      "Address": {
+        "street": "AIDFM Av. Prof. Egas Moniz, Piso 01",
+        "postalCode": "1649-028 Lisboa",
+        "country": "Portugal"
+      }
+    }
   },
   "EN": {
     "navbar": {
@@ -320,10 +364,36 @@
       ],
       "subtitles": [
         [
-          { "title": "About Us", "url": "/about" },
-          { "title": "Governing Bodies", "url": "/about/team" },
-          { "title": "Research Centers", "url": "/about/ci" },
-          { "title": "Institutional Information", "url": "/about/docs" }
+          {
+            "title": "Who We Are",
+            "url": "/about",
+            "sub": []
+          },
+          {
+            "title": "Governing Bodies",
+            "url": "/about/team",
+            "sub": [
+              { "title": "Board", "url": "/about/team#management" },
+              { "title": "General Assembly", "url": "/about/team#assembly" },
+              { "title": "Supervisory Board", "url": "/about/team#counsil" }
+            ]
+          },
+          {
+            "title": "Research Centers",
+            "url": "/about/ci",
+            "sub": [
+              { "title": "CCUL", "url": "/about/ci#CCUL" },
+              { "title": "ISAMB", "url": "/about/ci#ISAMB" },
+              { "title": "CEMBE", "url": "/about/ci#CEMBE" },
+              { "title": "Center for Bioethics", "url": "/about/ci#bioethic" },
+              { "title": "Egas Moniz Studies Center", "url": "/about/ci#egas" }
+            ]
+          },
+          {
+            "title": "Institutional information",
+            "url": "/about/docs",
+            "sub": []
+          }
         ],
         [
           { "title": "Organization of events", "url": "/services#events" },
@@ -368,28 +438,31 @@
         "title": "Our Numbers",
         "content": ["Staff", "Projects", "Partnerships", "Researchers"]
       },
-      "projects": [
-        {
-          "title": "Project 1",
-          "content": "Description of project 1"
-        },
-        {
-          "title": "Project 2",
-          "content": "Project 2 description"
-        },
-        {
-          "title": "Project 3",
-          "content": "Description of project 3"
-        },
-        {
-          "title": "Project 4",
-          "content": "Project 4 description"
-        },
-        {
-          "title": "Project 5",
-          "content": "Description of project 5"
-        }
-      ]
+      "projects": {
+        "title": "Our Projects",
+        "content": [
+          {
+            "title": "Project 1",
+            "content": "Description of project 1"
+          },
+          {
+            "title": "Project 2",
+            "content": "Project 2 description"
+          },
+          {
+            "title": "Project 3",
+            "content": "Description of project 3"
+          },
+          {
+            "title": "Project 4",
+            "content": "Project 4 description"
+          },
+          {
+            "title": "Project 5",
+            "content": "Description of project 5"
+          }
+        ]
+      }
     },
     "about": {
       "history": {
@@ -443,7 +516,7 @@
         "title": "Objectives",
         "content": [
           {
-            "title": "Realize",
+            "title": "Conduct",
             "description": "FMUL training and technical presentations"
           },
           {
@@ -553,17 +626,17 @@
     "research": {
       "content": [
         {
-          "sila": "CCUL",
+          "sigla": "CCUL",
           "title": "Cardiovascular Center of the University of Lisbon",
           "description": "A biomedical research institute committed to improving health and healthcare worldwide, following the standard of excellence in research, clinical care and medical education."
         },
         {
-          "sila": "ISAMB",
+          "sigla": "ISAMB",
           "title": "Institute of Environmental Health",
           "description": "It is a research center entirely dedicated to environmental health."
         },
         {
-          "sila": "CEMBE",
+          "sigla": "CEMBE",
           "title": "Center for Evidence-Based Medicine Studies",
           "description": "A structural unit of the Faculty of Medicine of the University of Lisbon, created with the aim of disseminating the principles of evidence-based medicine."
         },
@@ -572,7 +645,7 @@
           "description": "Its general objectives are to promote the study and dissemination of scientific knowledge, to research, train and/or collaborate in training in the field of bioethics, as well as to establish the national and international contacts it deems necessary."
         },
         {
-          "title": "Centro de Estudos Egas Moniz",
+          "title": "Egas Moniz Studies Center",
           "description": "Research Units with the aim of Scientific Research in the area we now call Clinical Neurosciences, which includes neurology, neurosurgery and psychiatry."
         }
       ]
@@ -619,6 +692,21 @@
         "title": "Research Support",
         "description": "Research support is AIDFM's main focus. We provide support for funding, scholarships, organizations and scientific coordination and dissemination.\n Through research, we aim to increasingly drive the advancement of science and knowledge, resulting in the learning of new techniques, medical treatments and discoveries in the different fields of medicine.\n This support is fundamental for the progress, not only of our organization, but also for scientific development."
       }
-    ]
+    ],
+    "footer": {
+      "contact": {
+        "title": "Contacts",
+        "content": [
+          { "title": "Mail", "content": "aidfm@medicina.ulisboa.pt" },
+          { "title": "Telephone", "content": "+351 92 123 45 67" },
+          { "title": "Cellular", "content": "+351 21 123 45 67" }
+        ]
+      },
+      "Address": {
+        "street": "AIDFM Av. Prof. Egas Moniz, Floor 01",
+        "postalCode": "1649-028 Lisbon",
+        "country": "Portugal"
+      }
+    }
   }
 }

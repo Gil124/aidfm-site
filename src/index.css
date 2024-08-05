@@ -29,6 +29,7 @@ body {
   color: #2b1fa9;
   backdrop-filter: blur(1px);
   font-size: 5vw;
+  text-align: center;
   margin: 2.5vh 0;
 }
 

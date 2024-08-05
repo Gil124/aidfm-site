@@ -4,6 +4,7 @@ import History from "./History/History";
 import Values from "./Values/Values";
 import Objectives from "./Objectives/Objectives";
 import InstInfo from "./InstInfo/InstInfo";
+import { getContent } from "./Navbar/Navbar";
 
 function WhoWeAre() {
   return (
@@ -17,7 +18,7 @@ function WhoWeAre() {
           margin: "10vh 27.2%",
         }}
       />
-      <h2 className="title-about">Missão, Visão e Valores</h2>
+      <h2 className="title-about">{getContent().about.mission.title}</h2>
       <Mission />
       <Values />
       <hr
