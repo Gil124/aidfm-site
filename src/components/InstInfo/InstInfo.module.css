@@ -31,8 +31,22 @@
 }
 
 .symbol {
-  width: 18px;
-  height: 18px;
+  width: 32px;
+  height: 32px;
   color: #f8f8fd;
   align-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .info {
+    height: 200px;
+  }
+
+  .button {
+    width: 260px;
+    height: 40px;
+    font-size: 14px;
+    padding: 0 1rem;
+  }
+  
 }
