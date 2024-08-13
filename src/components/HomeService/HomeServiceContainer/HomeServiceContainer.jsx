@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import styles from "./HomeServiceContainer.module.css";
-import { useNavigate } from "react-router-dom";
 import { getContent } from "../../Navbar/Navbar";
+import { useNavigate } from "react-router-dom";
 
 function HomeServiceContainer({ title, image, link }) {
   const containerStyle = {
@@ -11,8 +11,15 @@ function HomeServiceContainer({ title, image, link }) {
   const navigate = useNavigate();
 
   function handleCilck(toGO) {
-    console.log(toGO);
-    navigate(toGO);
+    let page = toGO.split("#")[0];
+    let section = toGO.split("#")[1];
+    navigate(page);
+    setTimeout(() => {
+      const contactSection = document.getElementById(section);
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 200);
   }
   return (
     <>

@@ -47,7 +47,7 @@
           { "title": "Organização de eventos", "url": "/services#events" },
           { "title": "Gestão Administrativa", "url": "/services#admin" },
           { "title": "Aquisição de Serviços", "url": "/services#services" },
-          { "title": "Relatórios de Projeto", "url": "/services#projects" },
+          { "title": "Relatórios de Projeto", "url": "/services#project" },
           { "title": "Minimização de Custos", "url": "/services#costs" },
           { "title": "Apoio à Investigação", "url": "/services#research" }
         ],
@@ -118,7 +118,7 @@
         "content": [
           {
             "date": "1993",
-            "description": "A AIDFM foi fundada pelo senhor João dia 10 de outubro de 1993 com aprovação do Presidente da Républica"
+            "description": "A AIDFM foi criada em 1993, com o objetivo de apoiar o desenvolvimento e a renovação pedagógico-científica da FMUL."
           },
           {
             "date": "1994",
@@ -198,78 +198,31 @@
     "org": {
       "title": "Orgãos Sociais",
       "description": "As nossa equipas são formadas por membros de elite de todas as àreas da medicina, dividos em: Assembleia Geral, Conselho Fiscal e Direção.",
-      "content": [
-        {
-          "title": "Direção",
-          "content": [
-            {
-              "name": "Prof. Doutor José Fernando de Freitas Velosa",
-              "role": "Presidente",
-              "description": "O Prof. Doutor José Fernando de Freitas Velosa é o presidente da AIDFM desde 2010."
-            },
-            {
-              "name": "Prof. Doutor António Cândido Vaz Carneiro",
-              "role": "Vice-Presidente",
-              "description": "O Prof. Doutor António Cândido Vaz Carneiro é o vice-presidente da AIDFM desde 2010."
-            },
-            {
-              "name": "Prof. Doutor Rui Tato Marinho",
-              "role": "Secretário",
-              "description": "O Prof. Doutor Rui Tato Marinho é o secretário da AIDFM desde 2010."
-            },
-            {
-              "name": "Profª. Doutora Maria Isabel Pavão Petiz",
-              "role": "Vogal",
-              "description": "A Profª. Doutora Maria Isabel Pavão Petiz é vogal da AIDFM desde 2010."
-            },
-            {
-              "name": "Prof. Doutor António Eduardo Pais Falcão Barbosa Martins",
-              "role": "Vogal",
-              "description": "O Prof. Doutor António Eduardo Pais Falcão Barbosa Martins é vogal da AIDFM desde 2010."
-            }
-          ]
-        },
-        {
-          "title": "Assembleia Geral",
-          "content": [
-            {
-              "name": "Prof. Doutor Fausto José da Conceição Alexandre Pinto",
-              "role": "Presidente",
-              "description": "O Prof. Doutor Fausto José da Conceição Alexandre Pinto é o presidente da Assembleia Geral da AIDFM desde 2010."
-            },
-            {
-              "name": "Prof. Doutor Fernando Manuel Godinho Rodrigues",
-              "role": "Vice-Presidente",
-              "description": "O Prof. Doutor Fernando Manuel Godinho Rodrigues é o vice-presidente da Assembleia Geral da AIDFM desde 2010."
-            },
-            {
-              "name": "Prof. Doutor Rui Gentil de Portugal e Vasconcelos Fernandes",
-              "role": "Secretário",
-              "description": "O Prof. Doutor Rui Gentil de Portugal e Vasconcelos Fernandes é o secretário da Assembleia Geral da AIDFM desde 2010."
-            }
-          ]
-        },
-        {
-          "title": "Conselho Fiscal",
-          "content": [
-            {
-              "name": "Prof. Doutor Joaquim Alexandre Ribeiro",
-              "role": "Presidente",
-              "description": "O Prof. Doutor Joaquim Alexandre Ribeiro é o presidente do Conselho Fiscal da AIDFM desde 2010."
-            },
-            {
-              "name": "Profª. Doutora Maria José Diógenes",
-              "role": "Vogal",
-              "description": "A Profª. Doutora Maria José Diógenes é vogal do Conselho Fiscal da AIDFM desde 2010."
-            },
-            {
-              "name": "Prof. Doutor Mamede Alves de Carvalho",
-              "role": "Vogal",
-              "description": "O Prof. Doutor Mamede Alves de Carvalho é vogal do Conselho Fiscal da AIDFM desde 2010."
-            }
-          ]
-        }
-      ]
+      "content": {
+        "title": "Direção",
+        "content": [
+          {
+            "name": "Prof. Doutor José Fernando de Freitas Velosa",
+            "role": "Presidente",
+            "description": "O Prof. Doutor José Fernando de Freitas Velosa é o presidente da AIDFM desde 2010."
+          },
+          {
+            "name": "Prof. Doutor António Cândido Vaz Carneiro",
+            "role": "Vice-Presidente",
+            "description": "O Prof. Doutor António Cândido Vaz Carneiro é o vice-presidente da AIDFM desde 2010."
+          },
+          {
+            "name": "Profª. Doutora Maria Isabel Pavão Petiz",
+            "role": "Vogal",
+            "description": "A Profª. Doutora Maria Isabel Pavão Petiz é vogal da AIDFM desde 2010."
+          },
+          {
+            "name": "Prof. Doutor António Eduardo Pais Falcão Barbosa Martins",
+            "role": "Vogal",
+            "description": "O Prof. Doutor António Eduardo Pais Falcão Barbosa Martins é vogal da AIDFM desde 2010."
+          }
+        ]
+      }
     },
     "research": {
       "content": [
@@ -348,9 +301,8 @@
       "contact": {
         "title": "Contactos",
         "content": [
-          { "title": "Email", "content": "+351 21 123 45 67" },
-          { "title": "Telefone", "content": "+351 92 123 45 67" },
-          { "title": "Telemóvel", "content": "+351 21 123 45 67" }
+          { "title": "Email", "content": "aidfm@medicina.ulisboa.pt" },
+          { "title": "Telefone", "content": "+351 21 000 85 00" }
         ]
       },
       "Address": {
@@ -405,7 +357,7 @@
           { "title": "Organization of events", "url": "/services#events" },
           { "title": "Administrative Management", "url": "/services#admin" },
           { "title": "Services Procurement", "url": "/services#services" },
-          { "title": "Project Reports", "url": "/services#projects" },
+          { "title": "Project Reports", "url": "/services#project" },
           { "title": "Cost Minimization", "url": "/services#costs" },
           { "title": "Research Support", "url": "/services#research" }
         ],
@@ -476,7 +428,7 @@
         "content": [
           {
             "date": "1993",
-            "description": "The AIDFM was founded by Mr. João on October 10, 1993 with the approval of the President of the Republic"
+            "description": "AIDFM was created in 1993 with the aim of supporting the development and pedagogical-scientific renewal of FMUL."
           },
           {
             "date": "1994",
@@ -556,78 +508,31 @@
     "org": {
       "title": "Orgãos Sociais",
       "description": "Our teams are made up of elite members from all areas of medicine, divided into: General Assembly, Supervisory Board and Board of Directors.",
-      "content": [
-        {
-          "title": "Board",
-          "content": [
-            {
-              "name": "Prof. Doutor José Fernando de Freitas Velosa",
-              "role": "President",
-              "description": "Prof. Doctor José Fernando de Freitas Velosa has been the president of the AIDFM since 2010."
-            },
-            {
-              "name": "Prof. Doutor António Cândido Vaz Carneiro",
-              "role": "Vice-President",
-              "description": "Prof. Doctor António Cândido Vaz Carneiro has been vice-president of the AIDFM since 2010."
-            },
-            {
-              "name": "Prof. Doctor Rui Tato Marinho",
-              "role": "Secretary",
-              "description": "Prof. Doctor Rui Tato Marinho has been the secretary of the AIDFM since 2010."
-            },
-            {
-              "name": "Prof. Dr. Maria Isabel Pavão Petiz",
-              "role": "Member",
-              "description": "Prof. Dr. Maria Isabel Pavão Petiz has been a member of the AIDFM since 2010."
-            },
-            {
-              "name": "Prof. Doutor António Eduardo Pais Falcão Barbosa Martins",
-              "role": "Member",
-              "description": "Prof. Doctor António Eduardo Pais Falcão Barbosa Martins has been a member of the AIDFM since 2010."
-            }
-          ]
-        },
-        {
-          "title": "General Assembly",
-          "content": [
-            {
-              "name": "Prof. Doutor Fausto José da Conceição Alexandre Pinto",
-              "role": "Chairman",
-              "description": "Prof. Doctor Fausto José da Conceição Alexandre Pinto has been the president of the AIDFM General Assembly since 2010."
-            },
-            {
-              "name": "Prof. Doctor Fernando Manuel Godinho Rodrigues",
-              "role": "Vice-President",
-              "description": "Prof. Doctor Fernando Manuel Godinho Rodrigues has been vice-president of the AIDFM General Assembly since 2010."
-            },
-            {
-              "name": "Prof. Doutor Rui Gentil de Portugal e Vasconcelos Fernandes",
-              "role": "Secretary",
-              "description": "Prof. Doctor Rui Gentil de Portugal e Vasconcelos Fernandes has been the secretary of the AIDFM General Assembly since 2010."
-            }
-          ]
-        },
-        {
-          "title": "Supervisory Board",
-          "content": [
-            {
-              "name": "Prof. Doutor Joaquim Alexandre Ribeiro",
-              "role": "Chairman",
-              "description": "Prof. Doctor Joaquim Alexandre Ribeiro has been chairman of the AIDFM's Supervisory Board since 2010."
-            },
-            {
-              "name": "Prof. Dr. Maria José Diógenes",
-              "role": "Member",
-              "description": "Prof. Dr. Maria José Diógenes has been a member of the AIDFM Supervisory Board since 2010."
-            },
-            {
-              "name": "Prof. Doctor Mamede Alves de Carvalho",
-              "role": "Member",
-              "description": "Prof. Doutor Mamede Alves de Carvalho has been a member of the AIDFM Supervisory Board since 2010."
-            }
-          ]
-        }
-      ]
+      "content": {
+        "title": "Board",
+        "content": [
+          {
+            "name": "Prof. Doutor José Fernando de Freitas Velosa",
+            "role": "President",
+            "description": "Prof. Doctor José Fernando de Freitas Velosa has been the president of the AIDFM since 2010."
+          },
+          {
+            "name": "Prof. Doutor António Cândido Vaz Carneiro",
+            "role": "Vice-President",
+            "description": "Prof. Doctor António Cândido Vaz Carneiro has been vice-president of the AIDFM since 2010."
+          },
+          {
+            "name": "Prof. Dr. Maria Isabel Pavão Petiz",
+            "role": "Member",
+            "description": "Prof. Dr. Maria Isabel Pavão Petiz has been a member of the AIDFM since 2010."
+          },
+          {
+            "name": "Prof. Doutor António Eduardo Pais Falcão Barbosa Martins",
+            "role": "Member",
+            "description": "Prof. Doctor António Eduardo Pais Falcão Barbosa Martins has been a member of the AIDFM since 2010."
+          }
+        ]
+      }
     },
     "research": {
       "content": [
@@ -706,9 +611,8 @@
       "contact": {
         "title": "Contacts",
         "content": [
-          { "title": "Mail", "content": "aidfm@medicina.ulisboa.pt" },
-          { "title": "Telephone", "content": "+351 92 123 45 67" },
-          { "title": "Cellular", "content": "+351 21 123 45 67" }
+          { "title": "Email", "content": "aidfm@medicina.ulisboa.pt" },
+          { "title": "Telephone", "content": "+351 21 000 85 00" }
         ]
       },
       "Address": {

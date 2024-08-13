@@ -78,6 +78,7 @@
 
 .subTitle:hover {
   color: #b3a5f8;
+  cursor: pointer;
 }
 
 .link {
@@ -153,7 +154,15 @@
   height: 30px;
   margin: 20px;
   margin-bottom: 5px;
+  transition: all 0.1s ease-in-out; 
 }
+
+.social:hover {
+  color: #c9c0fa;
+  scale: 1.1;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out; 
+} 
 
 @media only screen and (max-width: 1000px) {
   .footer {

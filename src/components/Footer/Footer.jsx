@@ -1,5 +1,5 @@
 import React, { useState, memo, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./Footer.module.css";
 import { nanoid } from "nanoid";
 import {
@@ -17,6 +17,20 @@ import { getContent } from "../Navbar/Navbar";
 function Footer() {
   const [currentTitle, setCurrentTitle] = useState(0);
   const currentTitleRef = useRef(currentTitle);
+
+  const navigate = useNavigate();
+
+  function handleLink(toGO) {
+    let page = toGO.split("#")[0];
+    let section = toGO.split("#")[1];
+    navigate(page);
+    setTimeout(() => {
+      const contactSection = document.getElementById(section);
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 200);
+  }
 
   function handleClick(number) {
     if (currentTitle === number) setCurrentTitle(0);
@@ -47,39 +61,47 @@ function Footer() {
       <div className={styles.container}>
         {getContent().navbar.titles.map((link, index) => (
           <div className={styles.bigContainer} key={nanoid()}>
-            <h2 id={link.url} className={styles.title} onClick={() => handleClick(index+1)}>
-            {link.title}
-          </h2>
-          {getContent().navbar.subtitles[index].map((section) => (
-             <div
-             id={section.url}
-             className={styles.mediumContainer}
-             key={nanoid()}
-             style={handleFooterStyle(index+1)}
-           >
-             <a href={`${section.url}`} className={styles.subTitle}>
-               {section.title}
-             </a>
-           </div>
-         ))
-        }
-        </div>
+            <h2
+              id={link.url}
+              className={styles.title}
+              onClick={() => handleClick(index + 1)}
+            >
+              {link.title}
+            </h2>
+            {getContent().navbar.subtitles[index].map((section) => (
+              <div
+                id={section.url}
+                className={styles.mediumContainer}
+                key={nanoid()}
+                style={handleFooterStyle(index + 1)}
+              >
+                <a
+                  className={styles.subTitle}
+                  onClick={() => handleLink(section.url)}
+                >
+                  {section.title}
+                </a>
+              </div>
+            ))}
+          </div>
         ))}
         <div className={styles.bigContainer}>
-          <h2 className={styles.titleContacts}>{getContent().footer.contact.title}</h2>
+          <h2 className={styles.titleContacts}>
+            {getContent().footer.contact.title}
+          </h2>
           <div className={styles.contactContainer}>
             <IoMailOutline className={styles.contactLogo} />
-            <a href={`mailto: ${getContent().footer.contact.content[0].content}`}>
-            {getContent().footer.contact.content[0].content}
+            <a
+              href={`mailto: ${getContent().footer.contact.content[0].content}`}
+            >
+              {getContent().footer.contact.content[0].content}
             </a>
           </div>
           <div className={styles.contactContainer}>
             <IoCallOutline className={styles.contactLogo} />
-            <a href={`tel:${getContent().footer.contact.content[1].content}`}>{getContent().footer.contact.content[1].content}</a>
-          </div>
-          <div className={styles.contactContainer}>
-            <IoHomeOutline className={styles.contactLogo} />
-            <a href={`tel:${getContent().footer.contact.content[2].content}`}>{getContent().footer.contact.content[2].content}</a>
+            <a href={`tel:${getContent().footer.contact.content[1].content}`}>
+              {getContent().footer.contact.content[1].content}
+            </a>
           </div>
         </div>
       </div>
@@ -88,7 +110,8 @@ function Footer() {
           <IoLocationOutline className={styles.locationLogo} />
           <p className={styles.info}>
             {getContent().footer.Address.street} <br />
-            {getContent().footer.Address.postalCode} <br /> {getContent().footer.Address.country}
+            {getContent().footer.Address.postalCode} <br />{" "}
+            {getContent().footer.Address.country}
           </p>
         </div>
         <a href="">
@@ -97,7 +120,7 @@ function Footer() {
         <a href="">
           <IoLogoFacebook className={styles.social} />
         </a>
-        <a href="">
+        <a href="https://www.linkedin.com/company/associa%C3%A7%C3%A3o-para-investiga%C3%A7%C3%A3o-e-desenvolvimento-da-faculdade-de-medicina/">
           <IoLogoLinkedin className={styles.social} />
         </a>
       </div>

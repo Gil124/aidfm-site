@@ -1,0 +1,21 @@
+.services {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: start;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 220px;
+}
+
+.middle {
+  width: calc(90% - 220px);
+  height: 100%;
+}

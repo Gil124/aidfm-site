@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import Headroom from "react-headroom";
 import Button from "../Button/Button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { nanoid } from "nanoid";
 import fullLogoImg from "../../assets/logo-nav.svg";
 import mobileLogoImg from "../../assets/logo-nav-mobile.svg";
@@ -37,6 +37,20 @@ const Navbar = () => {
   const [hovered, setHovered] = useState(false);
   const [navLang, setNavLang] = useState(lang);
   const [subMenu, setSubMenu] = useState(false);
+
+  const navigate = useNavigate();
+
+  function handleLink(toGO) {
+    let page = toGO.split("#")[0];
+    let section = toGO.split("#")[1];
+    navigate(page);
+    setTimeout(() => {
+      const contactSection = document.getElementById(section);
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 200);
+  }
 
   const toggleLang = () => {
     if (lang === "PT") {
@@ -135,14 +149,13 @@ const Navbar = () => {
               onMouseLeave={handleMouseExit}
             >
               {getContent().navbar.subtitles[links].map((link, index) => (
-                <Link
-                  reloadDocument
+                <p
                   key={nanoid()}
-                  to={link.url}
+                  onClick={() => handleLink(link.url)}
                   className={styles.menuLink}
                 >
                   {link.title}
-                </Link>
+                </p>
               ))}
             </div>
 

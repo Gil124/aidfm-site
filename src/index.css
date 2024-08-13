@@ -41,12 +41,23 @@ body {
   margin: 2.5vh 0;
 }
 
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+  height: auto;
+  width: 100%;
+  margin-top: 5vh;
+  margin-bottom: 15vh;
+  background-color: #f8f8fd;
+}
+
 .title-link {
   font-family: "Montserrat", sans-serif;
   color: #2b1fa9;
   backdrop-filter: blur(1px);
   font-size: 32pt;
-  margin: 12rem 0;
+  margin-bottom: 12rem ;
   text-align: center;
 }
 
