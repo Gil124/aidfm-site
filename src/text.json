@@ -118,7 +118,7 @@
         "content": [
           {
             "date": "1993",
-            "description": "A AIDFM foi criada em 1993, com o objetivo de apoiar o desenvolvimento e a renovação pedagógico-científica da FMUL."
+            "description": "A AIDFM foi fundada no dia 10 de outubro de 1993 com aprovação do Presidente da Républica"
           },
           {
             "date": "1994",
@@ -310,6 +310,16 @@
         "postalCode": "1649-028 Lisboa",
         "country": "Portugal"
       }
+    },
+    "join": {
+      "title": "Junte-se a Nós",
+      "content": [
+        {
+          "title": "Benefícios",
+          "description": "Valorizamos a formação dos nossos colaboradores. Orgulhamo-nos de oferecer coaching personalizado, formação constante, desafios aliciantes e desenvolvimento de carreira. Premiamos o esforço, a competência e o mérito. Se tens ambição de aprender mais, se não te falta espírito de iniciativa, se és apaixonado pelo que fazes e queres trabalhar em projetos inovadores, ajudar no desenvolvimento da medicina mundial, junta-te a nós!",
+          "catch": "Temos um lugar para si aqui!"
+        }
+      ]
     }
   },
   "EN": {
@@ -428,11 +438,11 @@
         "content": [
           {
             "date": "1993",
-            "description": "AIDFM was created in 1993 with the aim of supporting the development and pedagogical-scientific renewal of FMUL."
+            "description": "AIDFM was founded on 10 October 1993 with the approval of the President of the Republic."
           },
           {
             "date": "1994",
-            "description": "After the creation of the Installation Commission in December 1994, the AIDFM began its activities at the end of the same year."
+            "description": "After the creation of the Installation Commission in December 1994, AIDFM began its activities at the end of the same year."
           },
           {
             "date": "1995",
@@ -620,6 +630,16 @@
         "postalCode": "1649-028 Lisbon",
         "country": "Portugal"
       }
+    },
+    "join": {
+      "title": "Join Us",
+      "content": [
+        {
+          "title": "Benefits",
+          "description": "We value the training of our employees. We pride ourselves on offering personalised coaching, constant training, attractive challenges and career development. We reward effort, competence and merit. If you have the ambition to learn more, if you're not lacking in initiative, if you're passionate about what you do and want to work on innovative projects and help develop global medicine, join us! We have a place for you here.",
+          "catch": "We have a place for you here!"
+        }
+      ]
     }
   }
 }
