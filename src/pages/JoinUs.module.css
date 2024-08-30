@@ -21,6 +21,23 @@
   height: 100%;
 }
 
+
+.left_container img {
+ animation: zooming 3s infinite ease-in-out;
+}
+
+@keyframes zooming {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .right_container {
   display: flex;
   justify-content: center;
@@ -126,7 +143,7 @@
   font-size: 40pt;
   font-weight: 600;
   color: #2e20ca;
- margin-bottom: 2rem;
+  margin-bottom: 2rem;
   margin-top: 7rem;
 }
 
@@ -160,7 +177,7 @@
   text-align: start;
   font-size: 18pt;
   color: #3d31c4;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .opportunity_section {
@@ -177,7 +194,7 @@
 .opportunities {
   background-color: #c1bcff;
   width: 85%;
-  height: 40rem;
+  height: 32rem;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -222,15 +239,55 @@
 }
 
 .opportunity_title:hover {
- padding-left: 1.5rem;
- cursor: pointer;
- transition: all 0.2s ease-in-out;
+  padding-left: 1.5rem;
+  cursor: default;
+  transition: all 0.2s ease-in-out;
 }
 
 .opportunity_description {
   text-align: justify;
   font-size: 12pt;
+  color: #fff;
   width: 90%;
-  font-weight: 100 !important;
+  font-weight: 400 !important;
   padding-bottom: 0.5rem;
+}
+
+.candidate_button {
+  width: 360px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #291f96;
+  color: #f8f8fd;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "Monteserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 200;
+  letter-spacing: 0.72px;
+  cursor: pointer;
+  margin-bottom: 8rem;
+  transition: all 0.3s ease-out;
+}
+
+.candidate_button:hover {
+  background-color: #2e20cc;
+  scale: 105%;
+  transition: all 0.3s ease-out;
+}
+
+.symbol {
+  width: 28px;
+  height: 28px;
+  color: #f8f8fd;
+  align-content: center;
+}
+
+.candidate_button:hover {
+  .symbol {
+    rotate: 360deg;
+    transition: all 0.5s ease-out;
+  }
 }

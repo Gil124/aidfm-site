@@ -4,6 +4,7 @@ import heroImage from "../assets/joinUs.svg";
 import { getContent } from "../components/Navbar/Navbar";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Fade } from "react-awesome-reveal";
+import { IoMailOutline } from "react-icons/io5";
 import project1 from "../assets/project1.jpeg";
 import project2 from "../assets/project2.jpeg";
 import project3 from "../assets/project3.jpeg";
@@ -102,6 +103,10 @@ function JoinUs() {
             </div>
           ))}
         </div>
+        <button className={styles.candidate_button}>
+          {"Candidatura Espontânea"}
+          <IoMailOutline className={styles.symbol} />
+        </button>
         <div className={styles.right_corner_white}></div>
       </div>
     </>
