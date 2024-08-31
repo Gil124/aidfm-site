@@ -1,9 +1,9 @@
 import React, { useRef, useState, useMemo, useCallback } from "react";
 import { IoChevronForwardOutline, IoChevronBackOutline } from "react-icons/io5";
-import project1 from "../../assets/project1.jpeg";
-import project2 from "../../assets/project2.jpeg";
-import project3 from "../../assets/project3.jpeg";
-import project4 from "../../assets/project4.jpeg";
+import project1 from "../../assets/project1.jpg";
+import project2 from "../../assets/project2.jpg";
+import project3 from "../../assets/project3.jpg";
+import project4 from "../../assets/project4.jpg";
 import { nanoid } from "nanoid";
 import styles from "./HomeProjects.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";

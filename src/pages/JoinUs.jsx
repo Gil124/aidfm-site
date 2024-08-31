@@ -5,17 +5,12 @@ import { getContent } from "../components/Navbar/Navbar";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Fade } from "react-awesome-reveal";
 import { IoMailOutline } from "react-icons/io5";
-import project1 from "../assets/project1.jpeg";
-import project2 from "../assets/project2.jpeg";
-import project3 from "../assets/project3.jpeg";
-import project4 from "../assets/project4.jpeg";
 import { nanoid } from "nanoid";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Keyboard, Autoplay, Pagination, Navigation } from "swiper/modules";
 
-let imgs = [project1, project2, project3, project4, project2];
 function JoinUs() {
   return (
     <>
@@ -83,27 +78,30 @@ function JoinUs() {
       </div>
       <div className={styles.opportunity_section}>
         <h1 className={styles.hero_title}>
-          {getContent().join.content[1].title}
+          {getContent().join.content[2].title}
         </h1>
         <div className={styles.opportunities}>
-          {getContent().join.content[1].content.map((opportunity, index) => (
+          {getContent().join.content[2].content.map((opportunity, index) => (
             <div key={nanoid()} className={styles.opportunity_container}>
-              <h1 className={styles.opportunity_title}>{opportunity.person}</h1>
+              <h1 className={styles.opportunity_title}>{opportunity.title}</h1>
+              <h3 className={styles.opportunity_subtitle}>
+                {getContent().join.content[2].description_title}
+              </h3>
               <p className={styles.opportunity_description}>
-                {opportunity.opinion}
+                {opportunity.description}
               </p>
-            </div>
-          ))}
-          {getContent().join.content[1].content.map((opportunity, index) => (
-            <div key={nanoid()} className={styles.opportunity_container}>
-              <h1 className={styles.opportunity_title}>{opportunity.person}</h1>
-              <p className={styles.opportunity_description}>
-                {opportunity.opinion}
-              </p>
+              <h3 className={styles.opportunity_subtitle}>
+                {getContent().join.content[2].competences_title}
+              </h3>
+              <ul className={styles.competences}>
+                {opportunity.competences.map((competence, index) => (
+                  <li className={styles.competence} key={nanoid()}>{competence}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
-        <button className={styles.candidate_button}>
+        <button className={styles.candidate_button} onClick={()=>window.open('mailto:Aidfm.rh@medicina.ulisboa.pt?subject=Candidatura_posição_nome_candidato/a&body=As%20candidaturas%20devem%20ser%20submetidas,%20acompanhadas%20de%20CV%20com%20fotografia%20atualizada%20e%20comprovativo%20de%20Certificado%20de%20Habilitações')}>
           {"Candidatura Espontânea"}
           <IoMailOutline className={styles.symbol} />
         </button>
