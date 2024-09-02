@@ -52,11 +52,6 @@
           { "title": "Apoio à Investigação", "url": "/services#research" }
         ],
         [
-          { "title": "Projeto 1", "url": "/projects#1" },
-          { "title": "Projeto 2", "url": "/projects#2" },
-          { "title": "Projeto 3", "url": "/projects#3" },
-          { "title": "Projeto 4", "url": "/projects#4" },
-          { "title": "Projeto 5", "url": "/projects#5" }
         ],
         [
           { "title": "Benefícios", "url": "/join#ben" },
@@ -445,11 +440,6 @@
           { "title": "Research Support", "url": "/services#research" }
         ],
         [
-          { "title": "Project 1", "url": "/projects#1" },
-          { "title": "Project 2", "url": "/projects#2" },
-          { "title": "Project 3", "url": "/projects#3" },
-          { "title": "Project 4", "url": "/projects#4" },
-          { "title": "Project 5", "url": "/projects#5" }
         ],
         [
           { "title": "Benefits", "url": "/join#ben" },
