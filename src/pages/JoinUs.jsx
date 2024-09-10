@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import styles from "./JoinUs.module.css";
 import heroImage from "../assets/joinUs.svg";
 import { getContent } from "../components/Navbar/Navbar";
@@ -10,6 +10,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Keyboard, Autoplay, Pagination, Navigation } from "swiper/modules";
+import CandidatureForm from "../components/CandidatureForm/CandidatureForm";
+
 
 function JoinUs() {
   return (

@@ -1,0 +1,161 @@
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+  width: 85%;
+  margin: 6rem 0;
+}
+
+.text_container {
+  grid-column: 1;
+  flex: 0 1 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title {
+  width: fit-content;
+  font-size: 4.5rem;
+  color: #493faf;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  order: 2;
+  background: white;
+  padding: 4rem 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 6px 0 #4533ff1c;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+}
+
+.group {
+  width: 100%;
+  display: flex;
+  gap: 3rem;
+}
+
+.label {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #4533ff;
+  line-height: 1.6;
+}
+
+.input_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input::-webkit-file-upload-button {
+  background-color: #3a2ccf;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-right: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+input::-webkit-file-upload-button:hover {
+  background-color: #2e20ca;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+}
+
+input[type="file"] {
+  border: none;
+  padding-left: 0;
+}
+
+.must {
+  color: #4433ff81;
+}
+
+.input {
+  border-radius: 10px;
+  border: 1px solid rgb(168, 168, 168);
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 16pt;
+  outline: none;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+.input::placeholder {
+  color: slategrey;
+}
+
+.input:focus {
+  border: 1px solid #4533ff;
+}
+
+textarea {
+  min-height: 180px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid grey;
+  padding: 2rem 2rem;
+  font-weight: bold;
+  font-size: 14pt;
+  outline: none;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+textarea::placeholder {
+  color: slategrey;
+}
+
+textarea:focus {
+  border: 1px solid #4533ff;
+}
+
+.button_container {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 100%;
+}
+
+.button {
+  border-radius: 10px;
+  border: 1px solid #4533ff;
+  background-color: #4533ff;
+  padding: 1rem 2rem;
+  color: white;
+  font-weight: bold;
+  font-size: 16pt;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #3a2ccf;
+  cursor: pointer;
+  padding: 1rem 3rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    order: 1;
+  }
+  .group {
+    flex-direction: column;
+  }
+}
