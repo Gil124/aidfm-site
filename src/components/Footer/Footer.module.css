@@ -51,6 +51,11 @@
   letter-spacing: 2px;
 }
 
+.title:hover {
+  color: #b3a5f8;
+  cursor: pointer;
+}
+
 .titleContacts {
   color: #f8f8fd;
   margin-bottom: 10px;

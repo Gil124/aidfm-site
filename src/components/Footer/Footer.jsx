@@ -33,6 +33,11 @@ function Footer() {
   }
 
   function handleClick(number) {
+    window.innerWidth >= 1000
+      ? (window.location.href = getContent().navbar.titles[number - 1].url)
+      : number === 3
+      ? (window.location.href = getContent().navbar.titles[2].url)
+      : null;
     if (currentTitle === number) setCurrentTitle(0);
     else setCurrentTitle(number);
     currentTitleRef.current = number;
