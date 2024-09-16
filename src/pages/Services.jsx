@@ -8,6 +8,7 @@ import service4 from "../assets/service4.jpeg";
 import service5 from "../assets/service5.jpeg";
 import service6 from "../assets/service6.jpeg";
 import { getContent } from "../components/Navbar/Navbar";
+import MiniMenu from "../components/MiniMenu/MiniMenu";
 import ResearchCC from "../components/Research/Container/ResearchCC";
 import styles from "./Services.module.css";
 
@@ -42,7 +43,9 @@ function Services() {
   return (
     <>
       <div className={styles.services}>
-        <div className={styles.left}></div>
+        <div className={styles.left}>
+          <MiniMenu page={3} />
+        </div>
         <div className={styles.middle}>
           <div className="page">
             {services.map((service, index) => (

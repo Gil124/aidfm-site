@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./MiniMenu.module.css";
 import { nanoid } from "nanoid";
@@ -25,6 +25,16 @@ const menu = [
       { title: "Centro de Estudos Egas Moniz", ref: "/about/ci#egas" },
     ],
   },
+  {
+    sub: [
+      { title: "Organization of events", ref: "/services#events" },
+      { title: "Administrative Management", ref: "/services#admin" },
+      { title: "Services Procurement", ref: "/services#services" },
+      { title: "Project Reports", ref: "/services#project" },
+      { title: "Cost Minimization", ref: "/services#costs" },
+      { title: "Research Support", ref: "/services#research" },
+    ],
+  },
 ];
 
 function MiniMenu({ page }) {
@@ -45,11 +55,31 @@ function MiniMenu({ page }) {
     });
   };
 
+  useEffect(() => {
+    console.log(page);
+    console.log(getContent().navbar.subtitles[1]);
+  }, []);
+
   return (
     <>
       <div className={styles.container}>
-        <h2 className={styles.title}>{getContent().navbar.titles[0].title}</h2>
-        {getContent().navbar.subtitles[0].map((title, index) => (
+        <h2 className={styles.title}>
+          {page === 3
+            ? getContent().navbar.titles[1].title
+            : getContent().navbar.titles[0].title}
+        </h2>
+        {page === 3
+            ? getContent().navbar.subtitles[1].map((section, index) => (
+                <div key={nanoid()}>
+                  <a
+                    href={menu[3].sub[index].ref}
+                    className={styles.dropdownOption}
+                  >
+                    {section.title}
+                  </a>
+                </div>
+              ))
+            :getContent().navbar.subtitles[1].map((title, index) => (
           <div key={nanoid()}>
             <Link
               to={title.url}
@@ -81,28 +111,43 @@ function MiniMenu({ page }) {
           className={styles.dropdownContent}
           style={dropped ? { display: "block" } : { display: "none" }}
         >
-          {getContent().navbar.subtitles[0].map((title, index) => (
-            <div key={nanoid()}>
-              <Link
-                to={title.url}
-                className={styles.dropdownOption}
-                onClick={() => handleMenuClick(index)}
-              >
-                {title.title}
-              </Link>
-              {index === currentMenu && (
-                <div>
-                  {title.sub.map((subtitle) => (
-                    <div key={nanoid()}>
-                      <a href={subtitle.url} className={styles.dropdownOption}>
-                        {subtitle.title}
-                      </a>
-                    </div>
-                  ))}
+          {page === 3
+            ? getContent().navbar.subtitles[1].map((section, index) => (
+                <div key={nanoid()}>
+                  <Link
+                    to={section.url}
+                    className={styles.dropdownOption}
+                    onClick={() => handleMenuClick(index)}
+                  >
+                    {index}
+                  </Link>
                 </div>
-              )}
-            </div>
-          ))}
+              ))
+            : getContent().navbar.subtitles[0].map((title, index) => (
+                <div key={nanoid()}>
+                  <Link
+                    to={title.url}
+                    className={styles.dropdownOption}
+                    onClick={() => handleMenuClick(index)}
+                  >
+                    {title.title}
+                  </Link>
+                  {index === currentMenu && (
+                    <div>
+                      {title.sub.map((subtitle) => (
+                        <div key={nanoid()}>
+                          <a
+                            href={subtitle.url}
+                            className={styles.dropdownOption}
+                          >
+                            {subtitle.title}
+                          </a>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
         </div>
       </div>
     </>
