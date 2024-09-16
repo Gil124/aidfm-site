@@ -51,8 +51,7 @@
           { "title": "Minimização de Custos", "url": "/services#costs" },
           { "title": "Apoio à Investigação", "url": "/services#research" }
         ],
-        [
-        ],
+        [],
         [
           { "title": "Benefícios", "url": "/join#ben" },
           { "title": "Candidate-se", "url": "/join#cand" }
@@ -439,8 +438,7 @@
           { "title": "Cost Minimization", "url": "/services#costs" },
           { "title": "Research Support", "url": "/services#research" }
         ],
-        [
-        ],
+        [],
         [
           { "title": "Benefits", "url": "/join#ben" },
           { "title": "Apply", "url": "/join#cand" }
@@ -720,7 +718,22 @@
           "content": [
             {
               "title": "Human Resources Technician",
-              "description": "We are looking for a candidate with a degree in Management, specialising in Human Resources, to join a dynamic and versatile institution. The desired profile should include skills such as results orientation, strategic direction, systemic and analytical vision, planning ability, team spirit, proactivity, curiosity, enthusiasm, resilience and dedication. It is necessary to have excellent knowledge of Portuguese, good knowledge of English, notions of work organisation and mastery of basic IT tools. An internship contract with food allowance is on offer."
+              "description": "We are looking for a candidate with a degree in Management, specialising in Human Resources, to join a dynamic and versatile institution. The desired profile should include skills such as results orientation, strategic direction, systemic and analytical vision, planning ability, team spirit, proactivity, curiosity, enthusiasm, resilience and dedication. It is necessary to have excellent knowledge of Portuguese, good knowledge of English, notions of work organisation and mastery of basic IT tools. An internship contract with food allowance is on offer.",
+              "competences": [
+                "Results orientation",
+                "Strategic direction",
+                "Systemic and analytical vision",
+                "Planning capacity",
+                "Team spirit",
+                "Proactivity and curiosity",
+                "Enthusiasm and energy",
+                "Resilience and dedication",
+                "Effective work management",
+                "Excellent knowledge of Portuguese",
+                "Good knowledge of English",
+                "Notions of work organisation",
+                "Computer skills"
+              ]
             },
             {
               "title": "Executive and Administrative Secretary",
@@ -741,7 +754,20 @@
             },
             {
               "title": "Project Manager",
-              "description": "We are looking for a candidate with a degree in Management (or equivalent) to join a versatile and dynamic team, with the possibility of career progression. The main duties include preparing, submitting and monitoring applications, supporting the implementation of projects and developing evaluation methodologies. The candidate must demonstrate skills such as strategic direction, systemic vision, planning, time management, teamwork, proactivity, creativity, enthusiasm, resilience and the ability to manage their work effectively."
+              "description": "We are looking for a candidate with a degree in Management (or equivalent) to join a versatile and dynamic team, with the possibility of career progression. The main duties include preparing, submitting and monitoring applications, supporting the implementation of projects and developing evaluation methodologies. The candidate must demonstrate skills such as strategic direction, systemic vision, planning, time management, teamwork, proactivity, creativity, enthusiasm, resilience and the ability to manage their work effectively.",
+              "competences": [
+                "Strategic direction",
+                "Systemic and analytical vision",
+                "Planning and time management",
+                "Team spirit",
+                "Proactivity and curiosity",
+                "Enthusiasm and energy",
+                "Resilience and dedication",
+                "Effective work management",
+                "Creativity",
+                "Good knowledge of English",
+                "Teamwork"
+              ]
             }
           ]
         }

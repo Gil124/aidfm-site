@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./JoinUs.module.css";
 import heroImage from "../assets/joinUs.svg";
 import { getContent } from "../components/Navbar/Navbar";
@@ -12,8 +12,8 @@ import "swiper/css/navigation";
 import { Keyboard, Autoplay, Pagination, Navigation } from "swiper/modules";
 import CandidatureForm from "../components/CandidatureForm/CandidatureForm";
 
-
 function JoinUs() {
+
   return (
     <>
       <div className={styles.hero_section}>
@@ -97,13 +97,22 @@ function JoinUs() {
               </h3>
               <ul className={styles.competences}>
                 {opportunity.competences.map((competence, index) => (
-                  <li className={styles.competence} key={nanoid()}>{competence}</li>
+                  <li className={styles.competence} key={nanoid()}>
+                    {competence}
+                  </li>
                 ))}
               </ul>
             </div>
           ))}
         </div>
-        <button className={styles.candidate_button} onClick={()=>window.open('mailto:Aidfm.rh@medicina.ulisboa.pt?subject=Candidatura_posição_nome_candidato/a&body=As%20candidaturas%20devem%20ser%20submetidas,%20acompanhadas%20de%20CV%20com%20fotografia%20atualizada%20e%20comprovativo%20de%20Certificado%20de%20Habilitações')}>
+        <button
+          className={styles.candidate_button}
+          onClick={() =>
+            window.open(
+              "mailto:Aidfm.rh@medicina.ulisboa.pt?subject=Candidatura_posição_nome_candidato/a&body=As%20candidaturas%20devem%20ser%20submetidas,%20acompanhadas%20de%20CV%20com%20fotografia%20atualizada%20e%20comprovativo%20de%20Certificado%20de%20Habilitações"
+            )
+          }
+        >
           {"Candidatura Espontânea"}
           <IoMailOutline className={styles.symbol} />
         </button>

@@ -67,8 +67,15 @@ const Navbar = () => {
 
   const handleLinks = (link) => {
     if (link === 2) {
-      setSubMenu(true);
-      setLinks(link);
+      if (window.innerWidth < 1000) {
+        window.location.href = "/join";
+        setMenuOpen(false);
+      }
+    
+      else {
+        setSubMenu(true);
+        setLinks(link);
+      }
     } else {
       setMenu(true);
       setSubMenu(true);
