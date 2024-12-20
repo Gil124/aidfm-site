@@ -18,7 +18,7 @@
     "animate.css": "^4.1.1",
     "framer-motion": "^10.16.3",
     "gh-pages": "^6.1.0",
-    "nanoid": "^4.0.2",
+    "nanoid": "^5.0.9",
     "react": "^18.2.0",
     "react-awesome-reveal": "^4.2.7",
     "react-dom": "^18.2.0",
@@ -28,7 +28,7 @@
     "serve": "^14.2.1",
     "sweetalert": "^2.1.2",
     "swiper": "^10.3.0",
-    "vercel": "^33.5.1"
+    "vercel": "^32.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

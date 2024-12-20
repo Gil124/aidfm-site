@@ -1,0 +1,92 @@
+[
+  {
+    "PT": {
+      "title": "Novas Fronteiras em Medicina Cardiovascular",
+      "description": "Apresentamos o 14º Congresso Novas Fronteiras em Medicina Cardiovascular, organizado pela AIDFM e pelo Departamento de Coração e Vasos do CHULN-CAML. Após edições online, retomamos o formato presencial para discutir as mais recentes inovações em diagnóstico e tratamento cardiovascular.\n\n Com renomados especialistas nacionais e internacionais, o congresso oferece uma oportunidade única de formação pós-graduada, com sessões plenárias em duas salas simultâneas. Destinado a profissionais de saúde na área cardiovascular, o evento também acolhe outras especialidades, promovendo uma abordagem multidisciplinar."
+    },
+    "EN": {
+      "title": "Novas Fronteiras em Medicina Cardiovascular",
+      "description": "We present the 14th New Frontiers in Cardiovascular Medicine Congress, organised by the AIDFM and the Heart and Vessel Department of CHULN-CAML. After online editions, we are returning to the face-to-face format to discuss the latest innovations in cardiovascular diagnosis and treatment.\n\n With renowned national and international experts, the congress offers a unique opportunity for postgraduate training, with plenary sessions in two simultaneous rooms. Aimed at healthcare professionals in the cardiovascular field, the event also welcomes other specialities, promoting a multidisciplinary approach."
+    },
+    "others": {
+      "img": "/src/assets/projects/project1.jpg",
+      "imgAlt": "14º Congresso Novas Fronteiras em Medicina Cardiovascular",
+      "moreURL": "https://example.com/project1/more",
+      "startDate": "2024-01-01",
+      "endDate": "2025-01-01",
+      "location": "Portugal"
+    }
+  },
+  {
+    "PT": {
+      "title": "1º Simpósio de Enfermagem de Medicina Interna",
+      "description": "No dia 10 de outubro de 2024, a AIDFM organiza o 1º Simpósio de Enfermagem de Medicina Interna, intitulado 'Desafios de Quem Cuida', na Aula Magna. O evento abordará temas essenciais para a prática de enfermagem, como resiliência, comunicação e formação, reunindo profissionais para discutir os desafios e a versatilidade exigidos no cuidado diário de pacientes."
+    },
+    "EN": {
+      "title": "1º Simpósio de Enfermagem de Medicina Interna",
+      "description": "AIDFM is organising the 1st Internal Medicine Nursing Symposium, entitled 'Challenges for Caregivers', at the Aula Magna on 10 October 2024. The event will address essential topics for nursing practice, such as resilience, communication and training, bringing together professionals to discuss the challenges and versatility required in the daily care of patients."
+    },
+    "others": {
+      "img": "/src/assets/projects/project2.jpg",
+      "imgAlt": "1º Simpósio de Enfermagem de Medicina Interna",
+      "moreURL": "https://example.com/project2/more",
+      "startDate": "2021-01-02",
+      "endDate": "2021-01-02",
+      "location": "Portugal"
+    }
+  },
+  {
+    "PT": {
+      "title": "Pós-Graduação em Hipertensão Pulmonar",
+      "description": "A AIDFM promove a 2ª Edição do Curso Pós-Graduado em Hipertensão Pulmonar, de 26 a 28 de setembro de 2024, na Aula Magna da Faculdade de Medicina da Universidade de Lisboa. Sob a coordenação do Prof. Fausto Pinto e do Dr. Rui Plácido, o curso é uma oportunidade para aprofundar conhecimentos em medicina cardiovascular, com foco na hipertensão pulmonar."
+    },
+    "EN": {
+      "title": "Pós-Graduação em Hipertensão Pulmonar",
+      "description": "The AIDFM is organising the 1st Training Course in Emergency Medicine, which will take place on 10 and 11 October 2024. The course is aimed at healthcare professionals who wish to improve their skills in the field of emergency medicine, with a focus on the most common situations in the emergency department."
+    },
+    "others": {
+      "img": "/src/assets/projects/project3.jpg",
+      "imgAlt": "Pós-Graduação em Hipertensão Pulmonar",
+      "moreURL": "https://example.com/project3/more",
+      "startDate": "2021-01-02",
+      "endDate": "2021-01-02",
+      "location": "Portugal"
+    }
+  },
+  {
+    "PT": {
+      "title": "Um dia de Patologia Renal",
+      "description": "A AIDFM organiza 'A Day of Renal Pathology' com o Prof. Sanjeev Sethi, no dia 12 de outubro de 2024, em Lisboa. Este evento será uma oportunidade única para os profissionais de saúde aprofundarem seus conhecimentos em patologia renal, sob a orientação de um especialista renomado na área."
+    },
+    "EN": {
+      "title": "Um dia de Patologia Renal",
+      "description": "AIDFM is organising 'A Day of Renal Pathology' with Prof. Sanjeev Sethi on 12 October 2024 in Lisbon. This event will be a unique opportunity for healthcare professionals to deepen their knowledge of renal pathology under the guidance of a renowned expert in the field."
+    },
+    "others": {
+      "img": "/src/assets/projects/project4.jpg",
+      "imgAlt": "Um dia de Patologia Renal",
+      "moreURL": "https://example.com/project4/more",
+      "startDate": "2021-01-02",
+      "endDate": "2021-01-02",
+      "location": "Portugal"
+    }
+  },
+  {
+    "PT": {
+      "title": "Curso de Emergência Médica",
+      "description": "The AIDFM is organising the 1st Training Course in Emergency Medicine, which will take place on 10 and 11 October 2024. The course is aimed at healthcare professionals who wish to improve their skills in the field of emergency medicine, with a focus on the most common situations in the emergency department."
+    },
+    "EN": {
+      "title": "Curso de Emergência Médica",
+      "description": "The AIDFM is organising the 1st Training Course in Emergency Medicine, which will take place on 10 and 11 October 2024. The course is aimed at healthcare professionals who wish to improve their skills in the field of emergency medicine, with a focus on the most common situations in the emergency department."
+    },
+    "others": {
+      "img": "/src/assets/projects/project5.jpg",
+      "imgAlt": "Curso de Emergência Médica",
+      "moreURL": "https://example.com/project5/more",
+      "startDate": "2021-01-02",
+      "endDate": "2021-01-02",
+      "location": "Portugal"
+    }
+  }
+]

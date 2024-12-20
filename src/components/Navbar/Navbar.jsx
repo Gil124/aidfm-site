@@ -9,6 +9,7 @@ import mobileLogoImg from "../../assets/logo-nav-mobile.svg";
 import { Fade } from "react-awesome-reveal";
 import { IoClose, IoChevronBackOutline } from "react-icons/io5";
 import content from "../../text.json";
+import projects from "../../projects.json";
 
 if (localStorage.getItem("lang") === null) {
   localStorage.setItem("lang", "PT");
@@ -22,6 +23,19 @@ export const getContent = () => {
   } else {
     return content.PT;
   }
+};
+
+export const getProjects = () => {
+  // run though the all json and return the jsons corresponded to selected lagunage
+  let projectsContent = [];
+  for (let i = 0; i < projects.length; i++) {
+    if (lang === "EN") {
+      projectsContent.push({...projects[i].EN, ...projects[i].others});
+    } else {
+      projectsContent.push({...projects[i].PT, ...projects[i].others});
+    }
+  }
+  return projectsContent;
 };
 
 export const getLang = () => {
@@ -70,9 +84,7 @@ const Navbar = () => {
       if (window.innerWidth < 1000) {
         window.location.href = "/join";
         setMenuOpen(false);
-      }
-    
-      else {
+      } else {
         setSubMenu(true);
         setLinks(link);
       }

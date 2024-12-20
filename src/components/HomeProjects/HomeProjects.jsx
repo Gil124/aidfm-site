@@ -1,47 +1,18 @@
 import React, { useRef, useState, useMemo, useCallback } from "react";
 import { IoChevronForwardOutline, IoChevronBackOutline } from "react-icons/io5";
-import project1 from "../../assets/project1.jpg";
-import project2 from "../../assets/project2.jpg";
-import project3 from "../../assets/project3.jpg";
-import project4 from "../../assets/project4.jpg";
 import { nanoid } from "nanoid";
 import styles from "./HomeProjects.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Fade } from "react-awesome-reveal";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 import { Keyboard, Autoplay, Pagination, Navigation } from "swiper/modules";
-import { getContent } from "../Navbar/Navbar";
-
-let imgs = [project1, project2, project3, project4, project2];
-
-const projects = [
-  {
-    image: project1,
-    title: "Células Estaminais",
-    text: "A Equipa de Investigação dirigida pelo Dr. Luis Andrade tem vindo a inovar na área de pesquisa contra o cancro.",
-  },
-  {
-    image: project2,
-    title: "Natureza Farmacêutica",
-    text: "A Equipa de Investigação dirigida pelo Dr. Pedro Andrade tem vindo a produzir novos medicamentos baseados nos componentes que encontramos nas plantas.",
-  },
-  {
-    image: project3,
-    title: "Fígados Sintéticos",
-    text: "A Equipa de Investigação dirigida pelo Dra. Luisa Andrade tem vindo a criar novos tecidos de orgãos em laboratório.",
-  },
-  {
-    image: project4,
-    title: "Concurso de Investigação",
-    text: "Decorre agora a nível nacional um concurso de investigação médica, com um prémio para o vencedor.",
-  },
-];
+import { getContent, getProjects } from "../Navbar/Navbar";
 
 function HomeProjects() {
+  const projectsContent = getProjects();
+
   return (
     <>
       <h1 className="title">{getContent().homepage.projects.title}</h1>
@@ -70,15 +41,15 @@ function HomeProjects() {
           modules={[Keyboard, Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
-          {getContent().homepage.projects.content.map((project, index) => (
+          {projectsContent.map((project, index) => (
             <SwiperSlide
               key={nanoid()}
-              style={{ backgroundImage: `url(${imgs[index]})` }}>
+              style={{ backgroundImage: `url(${project.img})` }}>
               {({ isActive }) =>
                 isActive ? (
                   <div className={styles.textContainer}>
                     <h3 className={styles.title}>{project.title}</h3>
-                    <p className={styles.text}>{project.content}</p>
+                    <p className={styles.text}>{project.description}</p>
                   </div>
                 ) : (
                   <></>
