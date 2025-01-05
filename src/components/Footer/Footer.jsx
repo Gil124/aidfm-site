@@ -12,7 +12,7 @@ import {
   IoLogoLinkedin,
 } from "react-icons/io5";
 import logoImg from "../../assets/logo-nav.svg";
-import { getContent } from "../Navbar/Navbar";
+import { getContent, getProjects } from "../Navbar/Navbar";
 
 function Footer() {
   const [currentTitle, setCurrentTitle] = useState(0);
@@ -21,8 +21,10 @@ function Footer() {
   const navigate = useNavigate();
 
   function handleLink(toGO) {
+    console.log(toGO);
     let page = toGO.split("#")[0];
     let section = toGO.split("#")[1];
+    window.scrollTo(0, 0);
     navigate(page);
     setTimeout(() => {
       const contactSection = document.getElementById(section);
@@ -35,8 +37,6 @@ function Footer() {
   function handleClick(number) {
     window.innerWidth >= 1000
       ? (window.location.href = getContent().navbar.titles[number - 1].url)
-      : number === 3
-      ? (window.location.href = getContent().navbar.titles[2].url)
       : null;
     if (currentTitle === number) setCurrentTitle(0);
     else setCurrentTitle(number);
@@ -73,7 +73,21 @@ function Footer() {
             >
               {link.title}
             </h2>
-            {getContent().navbar.subtitles[index].map((section) => (
+            {index ===2 ? getProjects().slice(0,5).map((project, index) => (
+              <div
+                id={project.url}
+                className={styles.mediumContainer}
+                key={nanoid()}
+                style={handleFooterStyle(3)}
+              >
+                <a
+                  className={styles.subTitle}
+                  onClick={() => handleLink("/projects/" + index)}
+                >
+                  {project.title}
+                </a>
+              </div>
+            )) : getContent().navbar.subtitles[index].map((section) => (
               <div
                 id={section.url}
                 className={styles.mediumContainer}
