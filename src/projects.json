@@ -9,7 +9,7 @@
       "description": "We present the 14th New Frontiers in Cardiovascular Medicine Congress, organised by the AIDFM and the Heart and Vessel Department of CHULN-CAML. After online editions, we are returning to the face-to-face format to discuss the latest innovations in cardiovascular diagnosis and treatment.\n\n With renowned national and international experts, the congress offers a unique opportunity for postgraduate training, with plenary sessions in two simultaneous rooms. Aimed at healthcare professionals in the cardiovascular field, the event also welcomes other specialities, promoting a multidisciplinary approach."
     },
     "others": {
-      "img": "/src/assets/projects/project1.jpg",
+      "img": "src/assets/projects/project1.jpg",
       "imgAlt": "14º Congresso Novas Fronteiras em Medicina Cardiovascular",
       "moreURL": "https://example.com/project1/more",
       "startDate": "2024-01-01",
@@ -27,7 +27,7 @@
       "description": "AIDFM is organising the 1st Internal Medicine Nursing Symposium, entitled 'Challenges for Caregivers', at the Aula Magna on 10 October 2024. The event will address essential topics for nursing practice, such as resilience, communication and training, bringing together professionals to discuss the challenges and versatility required in the daily care of patients."
     },
     "others": {
-      "img": "/src/assets/projects/project2.jpg",
+      "img": "src/assets/projects/project2.jpg",
       "imgAlt": "1º Simpósio de Enfermagem de Medicina Interna",
       "moreURL": "https://example.com/project2/more",
       "startDate": "2021-01-02",
@@ -45,7 +45,7 @@
       "description": "The AIDFM is organising the 1st Training Course in Emergency Medicine, which will take place on 10 and 11 October 2024. The course is aimed at healthcare professionals who wish to improve their skills in the field of emergency medicine, with a focus on the most common situations in the emergency department."
     },
     "others": {
-      "img": "/src/assets/projects/project3.jpg",
+      "img": "src/assets/projects/project3.jpg",
       "imgAlt": "Pós-Graduação em Hipertensão Pulmonar",
       "moreURL": "https://example.com/project3/more",
       "startDate": "2021-01-02",
@@ -63,7 +63,7 @@
       "description": "AIDFM is organising 'A Day of Renal Pathology' with Prof. Sanjeev Sethi on 12 October 2024 in Lisbon. This event will be a unique opportunity for healthcare professionals to deepen their knowledge of renal pathology under the guidance of a renowned expert in the field."
     },
     "others": {
-      "img": "/src/assets/projects/project4.jpg",
+      "img": "src/assets/projects/project4.jpg",
       "imgAlt": "Um dia de Patologia Renal",
       "moreURL": "https://example.com/project4/more",
       "startDate": "2021-01-02",
@@ -81,7 +81,7 @@
       "description": "The AIDFM is organising the 1st Training Course in Emergency Medicine, which will take place on 10 and 11 October 2024. The course is aimed at healthcare professionals who wish to improve their skills in the field of emergency medicine, with a focus on the most common situations in the emergency department."
     },
     "others": {
-      "img": "/src/assets/projects/project5.jpg",
+      "img": "src/assets/projects/project5.jpg",
       "imgAlt": "Curso de Emergência Médica",
       "moreURL": "https://example.com/project5/more",
       "startDate": "2021-01-02",

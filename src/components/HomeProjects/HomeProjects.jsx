@@ -41,23 +41,26 @@ function HomeProjects() {
           modules={[Keyboard, Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
-          {projectsContent.map((project, index) => (
-            <SwiperSlide
-              key={nanoid()}
-              style={{ backgroundImage: `url(${project.img})` }}>
-              {({ isActive }) =>
-                isActive ? (
-                  <div className={styles.textContainer}>
-                    <h3 className={styles.title}>{project.title}</h3>
-                    <p className={styles.text}>{project.description}</p>
-                  </div>
-                ) : (
-                  <></>
-                )
-              }
+          {projectsContent
+            .sort((a, b) => new Date(b.endDate) - new Date(a.endDate))
+            .slice(0, 10)
+            .map((project, index) => (
+              <SwiperSlide
+                key={nanoid()}
+                style={{ backgroundImage: `url(${project.img})` }}
+              >
+                {({ isActive }) =>
+                  isActive ? (
+                    <div className={styles.textContainer}>
+                      <h3 className={styles.title}>{project.title}</h3>
+                      <p className={styles.text}>{project.description}</p>
+                    </div>
+                  ) : (
+                    <></>
+                  )
+                }
               </SwiperSlide>
-            
-          ))}
+            ))}
         </Swiper>
       </Fade>
     </>
