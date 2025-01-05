@@ -46,7 +46,8 @@
     height: 32rem;
   }
   .title {
-    font-size: 28pt;
-    line-height: 32pt;
+    width: 90%;
+    font-size: 22pt;
+    line-height: 110%;
   }
 }

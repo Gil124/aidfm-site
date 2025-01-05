@@ -5,15 +5,8 @@ import styles from "./Team.module.css";
 import { nanoid } from "nanoid";
 import joseVelosa from "../../assets/joseVelosa.jpg";
 import antonioCarneiro from "../../assets/antonioCarneiro.jpg";
-import ruiTato from "../../assets/ruiTato.jpg";
 import isabelPavao from "../../assets/isabelPavao.jpg";
 import eduardoMartins from "../../assets/eduardoMartins.jpg";
-import faustoPinto from "../../assets/faustoPinto.jpg";
-import fernandoGodinho from "../../assets/fernandoGodinho.jpg";
-import ruiPortugal from "../../assets/ruiPortugal.jpg";
-import alexandreRibeiro from "../../assets/alexandreRibeiro.png";
-import mariaDiogenes from "../../assets/mariaDiogenes.jpg";
-import mamedeCarvalho from "../../assets/mamedeCarvalho.jpg";
 import orgSoc from "../../assets/orgSocial.svg";
 import { getContent } from "../Navbar/Navbar";
 

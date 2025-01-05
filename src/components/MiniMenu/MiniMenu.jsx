@@ -55,11 +55,6 @@ function MiniMenu({ page }) {
     });
   };
 
-  useEffect(() => {
-    console.log(page);
-    console.log(getContent().navbar.subtitles[1]);
-  }, []);
-
   return (
     <>
       <div className={styles.container}>
@@ -79,7 +74,7 @@ function MiniMenu({ page }) {
                   </a>
                 </div>
               ))
-            :getContent().navbar.subtitles[1].map((title, index) => (
+            :getContent().navbar.subtitles[0].map((title, index) => (
           <div key={nanoid()}>
             <Link
               to={title.url}
@@ -90,7 +85,7 @@ function MiniMenu({ page }) {
             </Link>
             {index === currentMenu && (
               <div>
-                {title.sub.map((subtitle) => (
+                {getContent().navbar.subtitles[0][page].sub.map((subtitle) => (
                   <div key={nanoid()}>
                     <a href={subtitle.url} className={styles.subs}>
                       {subtitle.title}

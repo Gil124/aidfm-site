@@ -64,6 +64,11 @@ body {
 a {
   text-decoration: none;
   color: #4533ff;
+  transition: all 0.2s;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .swiper {

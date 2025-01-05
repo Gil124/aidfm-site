@@ -62,7 +62,7 @@ function Services() {
       </div>
       <h1 className="title-link">
         {getContent().services.end[0]}{" "}
-        <a href={`mailto: ${getContent().footer.contact.content[0].content}`}>
+        <a href="mailto: aidfm@medicina.ulisboa.pt">
           {getContent().services.end[1]}
         </a>{" "}
         {getContent().services.end[2]}

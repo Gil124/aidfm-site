@@ -17,11 +17,7 @@
           {
             "title": "Orgãos Sociais",
             "url": "/about/team",
-            "sub": [
-              { "title": "Direção", "url": "/about/team#management" },
-              { "title": "Assembleia Geral", "url": "/about/team#assembly" },
-              { "title": "Conselho Fiscal", "url": "/about/team#counsil" }
-            ]
+            "sub": []
           },
           {
             "title": "Centros de Investigação",
@@ -53,8 +49,8 @@
         ],
         [],
         [
-          { "title": "Benefícios", "url": "/join#ben" },
-          { "title": "Candidate-se", "url": "/join#cand" }
+          { "title": "Benefícios", "url": "/join" },
+          { "title": "Candidate-se", "url": "/join" }
         ]
       ]
     },
@@ -407,11 +403,7 @@
           {
             "title": "Governing Bodies",
             "url": "/about/team",
-            "sub": [
-              { "title": "Board", "url": "/about/team#management" },
-              { "title": "General Assembly", "url": "/about/team#assembly" },
-              { "title": "Supervisory Board", "url": "/about/team#counsil" }
-            ]
+            "sub": []
           },
           {
             "title": "Research Centers",
@@ -440,8 +432,8 @@
         ],
         [],
         [
-          { "title": "Benefits", "url": "/join#ben" },
-          { "title": "Apply", "url": "/join#cand" }
+          { "title": "Benefits", "url": "/join" },
+          { "title": "Apply", "url": "/join" }
         ]
       ]
     },

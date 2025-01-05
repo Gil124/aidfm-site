@@ -22,6 +22,10 @@
   height: 100%;
 }
 
+.title-link a:hover {
+  scale: 1.05;
+}
+
 @media screen and (max-width: 1000px) {
   .middle {
     width: 80%;

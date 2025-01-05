@@ -30,9 +30,9 @@ export const getProjects = () => {
   let projectsContent = [];
   for (let i = 0; i < projects.length; i++) {
     if (lang === "EN") {
-      projectsContent.push({...projects[i].EN, ...projects[i].others});
+      projectsContent.push({ ...projects[i].EN, ...projects[i].others });
     } else {
-      projectsContent.push({...projects[i].PT, ...projects[i].others});
+      projectsContent.push({ ...projects[i].PT, ...projects[i].others });
     }
   }
   return projectsContent;
@@ -42,7 +42,7 @@ export const getLang = () => {
   return lang;
 };
 
-const heights = ["200px", "269px", "150px", "100px"];
+const heights = ["200px", "269px", "200px", "100px"];
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -80,22 +80,13 @@ const Navbar = () => {
   };
 
   const handleLinks = (link) => {
-    if (link === 2) {
-      if (window.innerWidth < 1000) {
-        window.location.href = "/join";
-        setMenuOpen(false);
-      } else {
-        setSubMenu(true);
-        setLinks(link);
-      }
-    } else {
-      setMenu(true);
-      setSubMenu(true);
-      setLinks(link);
-      setTimeout(() => {
-        setHovered(true);
-      }, 300);
-    }
+    console.log(link);
+    setMenu(true);
+    setSubMenu(true);
+    setLinks(link);
+    setTimeout(() => {
+      setHovered(true);
+    }, 300);
   };
 
   const handleMenuBack = () => {
@@ -172,15 +163,35 @@ const Navbar = () => {
               }
               onMouseLeave={handleMouseExit}
             >
-              {getContent().navbar.subtitles[links].map((link, index) => (
-                <p
-                  key={nanoid()}
-                  onClick={() => handleLink(link.url)}
-                  className={styles.menuLink}
-                >
-                  {link.title}
-                </p>
-              ))}
+              {links === 2
+                ? getProjects()
+                    .slice(0, 5)
+                    .map((link, index) => (
+                      <p
+                        key={nanoid()}
+                        onClick={() => {
+                          handleLink("/projects/" + index);
+                          setMenu(false);
+                          setSubMenu(false);
+                        }}
+                        className={styles.menuLink}
+                      >
+                        {link.title}
+                      </p>
+                    ))
+                : getContent().navbar.subtitles[links].map((link, index) => (
+                    <p
+                      key={nanoid()}
+                      onClick={() => {
+                        handleLink(link.url);
+                        setMenu(false);
+                        setSubMenu(false);
+                      }}
+                      className={styles.menuLink}
+                    >
+                      {link.title}
+                    </p>
+                  ))}
             </div>
 
             <div className={styles.right_lang}>
@@ -236,16 +247,29 @@ const Navbar = () => {
             className={styles.mobile_title}
             style={subMenu ? { display: "flex" } : { display: "none" }}
           >
-            {getContent().navbar.subtitles[links].map((link, index) => (
-              <Link
-                key={nanoid()}
-                className={styles.mobile_navbarLink}
-                to={link.url}
-                reloadDocument
-              >
-                {link.title}
-              </Link>
-            ))}
+            {links === 2
+              ? getProjects()
+                  .slice(0, 5)
+                  .map((project, index) => (
+                    <Link
+                      key={nanoid()}
+                      className={styles.mobile_navbarLink}
+                      to={"/projects/" + index}
+                      reloadDocument
+                    >
+                      {project.title}
+                    </Link>
+                  ))
+              : getContent().navbar.subtitles[links].map((link, index) => (
+                  <Link
+                    key={nanoid()}
+                    className={styles.mobile_navbarLink}
+                    to={link.url}
+                    reloadDocument
+                  >
+                    {link.title}
+                  </Link>
+                ))}
           </div>
         </div>
         <div className={styles.menu_link_list}></div>
