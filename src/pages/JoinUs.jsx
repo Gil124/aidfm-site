@@ -12,6 +12,12 @@ import "swiper/css/navigation";
 import { Keyboard, Autoplay, Pagination, Navigation } from "swiper/modules";
 import CandidatureForm from "../components/CandidatureForm/CandidatureForm";
 
+const quotesImgs = [
+  "imgs/quotes/quote1person.jpeg",
+  "imgs/quotes/quote2person.jpg",
+  "imgs/quotes/quote3person.jpg",
+]
+
 function JoinUs() {
 
   return (
@@ -59,7 +65,7 @@ function JoinUs() {
                   isActive ? (
                     <div className={styles.quote_container}>
                       <img
-                        src={"https://thispersondoesnotexist.com/"}
+                        src={quotesImgs[index]}
                         className={styles.quote_img}
                       ></img>
                       <div className={styles.textContainer}>
