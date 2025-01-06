@@ -80,7 +80,6 @@ const Navbar = () => {
   };
 
   const handleLinks = (link) => {
-    console.log(link);
     setMenu(true);
     setSubMenu(true);
     setLinks(link);

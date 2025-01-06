@@ -9,9 +9,11 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Keyboard, Autoplay, Pagination, Navigation } from "swiper/modules";
 import { getContent, getProjects } from "../Navbar/Navbar";
+import { useNavigate } from "react-router-dom";
 
 function HomeProjects() {
   const projectsContent = getProjects();
+  const navigate = useNavigate();
 
   return (
     <>
@@ -46,6 +48,7 @@ function HomeProjects() {
             .slice(0, 10)
             .map((project, index) => (
               <SwiperSlide
+                onClick={() => {scrollTo(0,0); navigate("/projects/" + index);}}
                 key={nanoid()}
                 style={{ backgroundImage: `url(${project.img})` }}
               >

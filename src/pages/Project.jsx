@@ -33,7 +33,6 @@ function Project() {
   const projectTitle = project.title;
   const projectDescription = project.description;
   const projectImage = project.img;
-  console.log(projectImage);
   const projectStartDate = project.startDate;
   const projectEndDate = project.endDate;
   const projectUrl = project.moreURL;
@@ -75,8 +74,44 @@ function Project() {
       <div className={styles.content}>
         <p className={styles.description}>{projectDescription}</p>
         <div className={styles.tags}>
-          {projectStartDate !== projectEndDate ? (
-            <>
+          {projectStartDate &&
+            projectEndDate &&
+            (projectStartDate !== projectEndDate ? (
+              <>
+                <div
+                  className={
+                    isLive == "live"
+                      ? styles.timeTagLive
+                      : isLive == "upcoming"
+                      ? styles.timeTagUpcoming
+                      : styles.timeTagPast
+                  }
+                >
+                  <LuCalendar />
+                  <p>
+                    {isLive == "upcoming"
+                      ? text.startDateUpcoming
+                      : text.startDateLive}
+                  </p>
+                  <p className={styles.value}>{projectStartDate}</p>
+                </div>
+                <div
+                  className={
+                    isLive == "live"
+                      ? styles.timeTagLive
+                      : isLive == "upcoming"
+                      ? styles.timeTagUpcoming
+                      : styles.timeTagPast
+                  }
+                >
+                  <LuCalendar />
+                  <p>
+                    {isLive == "past" ? text.endDatePast : text.endDateLive}
+                  </p>
+                  <p className={styles.value}>{projectEndDate}</p>
+                </div>
+              </>
+            ) : (
               <div
                 className={
                   isLive == "live"
@@ -87,41 +122,9 @@ function Project() {
                 }
               >
                 <LuCalendar />
-                <p>
-                  {isLive == "upcoming"
-                    ? text.startDateUpcoming
-                    : text.startDateLive}
-                </p>
                 <p className={styles.value}>{projectStartDate}</p>
               </div>
-              <div
-                className={
-                  isLive == "live"
-                    ? styles.timeTagLive
-                    : isLive == "upcoming"
-                    ? styles.timeTagUpcoming
-                    : styles.timeTagPast
-                }
-              >
-                <LuCalendar />
-                <p>{isLive == "past" ? text.endDatePast : text.endDateLive}</p>
-                <p className={styles.value}>{projectEndDate}</p>
-              </div>{" "}
-            </>
-          ) : (
-            <div
-            className={
-              isLive == "live"
-                ? styles.timeTagLive
-                : isLive == "upcoming"
-                ? styles.timeTagUpcoming
-                : styles.timeTagPast
-            }
-          >
-            <LuCalendar />
-            <p className={styles.value}>{projectStartDate}</p>
-          </div>
-          )}
+            ))}
           {projectLocation && (
             <a
               className={styles.locationTag}

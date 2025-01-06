@@ -21,7 +21,6 @@ function Footer() {
   const navigate = useNavigate();
 
   function handleLink(toGO) {
-    console.log(toGO);
     let page = toGO.split("#")[0];
     let section = toGO.split("#")[1];
     window.scrollTo(0, 0);
